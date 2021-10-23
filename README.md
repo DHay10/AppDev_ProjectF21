@@ -64,6 +64,7 @@
     - [ ] Add column with values
   - [ ] Add Sort/Filtering Function
   - [ ] Add Search Box Function
+  - [ ] Link to Student File View
 - [ ] Implement Student View
   - [ ] Show values
   - [ ] Update Info Function
