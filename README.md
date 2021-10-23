@@ -30,8 +30,6 @@
 
 - This view is the creation of a new student, it will offer datafields that will need to be filled and some that will be optional to fill. This will also assign an unique `StudentID` to the new created instance in the system.
 
----
-
 ## **To-do List**
 
 - [ ] Implement Login Screen
