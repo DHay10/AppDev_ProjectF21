@@ -89,3 +89,8 @@
   - [ ] Delete Function
 
 ## Database
+
+StudentID | FirstName | LastName | AddressNum | StreetName | SecondaryNum | City | Province | Country | Phone
+--------|----------|----------|-----------|---------|--------|--------|-------|--------|---
+(Unique)(PK) Int | String | String | Int | String | String | String | String | String
+00001 | Andy | Nguyen-Chao | 212 | Av. Christophe-Colomb | 203 | Montreal | Montreal | QC | 514-382-7919
