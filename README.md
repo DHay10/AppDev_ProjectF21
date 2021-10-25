@@ -11,6 +11,9 @@
     - [Student File View](#student-file-view)
     - [New Student Creation View](#new-student-creation-view)
   - [**To-do List**](#to-do-list)
+    - [General](#general)
+    - [Specific](#specific)
+  - [Database](#database)
 
 ## **Description**
 
@@ -37,15 +40,29 @@
 
 ## **To-do List**
 
+### General
+
+- [ ] Design Database
+- [ ] Student Class
+- [ ] Admin Class
 - [ ] Implement Login Screen
+  - [ ] Admin Creation
 - [ ] Implement Dashboard View (Main Menu)
   - [ ] Make link to New Student View
   - [ ] Make link to Database View
-- [ ] Implement New Student View
+- [ ] Clean GUI
+- [ ] Add Theme
+
+### Specific
+
+- [ ] Duplicates
+- [ ] Error Messages
+- [ ] Specific Cases(Number/Symbols)
+- [ ] Implement New Student View (`Sarah`)
   - [ ] Input Fields
     - [ ] First Name / Last Name
     - [ ] Parents' contact info
-    - [ ] Siblings in School
+    - [ ] Siblings in School (Optional)
     - [ ] Address
       - [ ] Number
       - [ ] Street Name
@@ -57,17 +74,18 @@
     - [ ] Return Button
     - [ ] Save Button
     - [ ] Preview File
-  - [ ] Clean GUI
-  - [ ] Add Theme
-- [ ] Implement Database View
+- [ ] Implement Database View (`Andy`)
   - [ ] Add database reading
     - [ ] Add column with values
   - [ ] Add Sort/Filtering Function
   - [ ] Add Search Box Function
   - [ ] Link to Student File View
-- [ ] Implement Student View
+- [ ] Implement Student View (`Hendrick`)
   - [ ] Show values
   - [ ] Update Info Function
+  - [ ] Next/Previous Button
   - [ ] Return Button
   - [ ] Add grades
   - [ ] Delete Function
+
+## Database
