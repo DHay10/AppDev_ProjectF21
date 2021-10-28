@@ -1,8 +1,8 @@
-# **AppDev_Project**
+# **Application Development Project**
 
 ## **Table Of Content**
 
-- [**AppDev_Project**](#appdev_project)
+- [**Application Development Project**](#application-development-project)
   - [**Table Of Content**](#table-of-content)
   - [**Description**](#description)
   - [**Main Functions**](#main-functions)
@@ -36,7 +36,7 @@
 
 ### New Student Creation View
 
-- This view is the creation of a new student, it will offer datafields that will need to be filled and some that will be optional to fill. This will also assign an unique `StudentID` to the new created instance in the system.
+- This view is the creation of a new student, it will offer data fields that will need to be filled and some that will be optional to fill. This will also assign an unique `StudentID` to the new created instance in the system.
 
 ## **To-do List**
 
@@ -92,5 +92,5 @@
 
 StudentID | FirstName | LastName | AddressNum | StreetName | SecondaryNum | City | Province | Country | Phone
 --------|----------|----------|-----------|---------|--------|--------|-------|--------|---
-(Unique)(PK) Int | String | String | Int | String | String | String | String | String
-00001 | Andy | Nguyen-Chao | 212 | Av. Christophe-Colomb | 203 | Montreal | Montreal | QC | 514-382-7919
+(Unique)(PK) Int | String | String | Int | String | String | String | String | String | String
+00001 | Andy | Nguyen-Chao | 2121 | Av. Christophe-Colomb | 203 | Montreal | Montreal | QC | 514-382-7919
