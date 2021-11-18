@@ -39,28 +39,31 @@ namespace ProjectV1
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(332, 316);
+            this.button1.Location = new System.Drawing.Point(249, 257);
+            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(56, 19);
             this.button1.TabIndex = 0;
-            this.button1.Text = "button1";
+            this.button1.Text = "Submit";
             this.button1.UseVisualStyleBackColor = true;
             // 
             // loginL
             // 
             this.loginL.AutoSize = true;
-            this.loginL.Location = new System.Drawing.Point(350, 66);
+            this.loginL.Location = new System.Drawing.Point(262, 54);
+            this.loginL.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.loginL.Name = "loginL";
-            this.loginL.Size = new System.Drawing.Size(43, 17);
+            this.loginL.Size = new System.Drawing.Size(33, 13);
             this.loginL.TabIndex = 1;
             this.loginL.Text = "Login";
             // 
             // usernameL
             // 
             this.usernameL.AutoSize = true;
-            this.usernameL.Location = new System.Drawing.Point(137, 173);
+            this.usernameL.Location = new System.Drawing.Point(103, 141);
+            this.usernameL.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.usernameL.Name = "usernameL";
-            this.usernameL.Size = new System.Drawing.Size(77, 17);
+            this.usernameL.Size = new System.Drawing.Size(58, 13);
             this.usernameL.TabIndex = 2;
             this.usernameL.Text = "Username:";
             this.usernameL.Click += new System.EventHandler(this.label2_Click);
@@ -68,38 +71,42 @@ namespace ProjectV1
             // passwordL
             // 
             this.passwordL.AutoSize = true;
-            this.passwordL.Location = new System.Drawing.Point(137, 226);
+            this.passwordL.Location = new System.Drawing.Point(103, 184);
+            this.passwordL.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.passwordL.Name = "passwordL";
-            this.passwordL.Size = new System.Drawing.Size(73, 17);
+            this.passwordL.Size = new System.Drawing.Size(56, 13);
             this.passwordL.TabIndex = 3;
             this.passwordL.Text = "Password:";
             // 
             // usernameTB
             // 
-            this.usernameTB.Location = new System.Drawing.Point(221, 173);
+            this.usernameTB.Location = new System.Drawing.Point(166, 141);
+            this.usernameTB.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.usernameTB.Name = "usernameTB";
-            this.usernameTB.Size = new System.Drawing.Size(100, 22);
+            this.usernameTB.Size = new System.Drawing.Size(76, 20);
             this.usernameTB.TabIndex = 4;
             // 
             // passwordTB
             // 
-            this.passwordTB.Location = new System.Drawing.Point(221, 223);
+            this.passwordTB.Location = new System.Drawing.Point(166, 181);
+            this.passwordTB.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.passwordTB.Name = "passwordTB";
             this.passwordTB.PasswordChar = '*';
-            this.passwordTB.Size = new System.Drawing.Size(100, 22);
+            this.passwordTB.Size = new System.Drawing.Size(76, 20);
             this.passwordTB.TabIndex = 5;
             // 
             // LoginView
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(600, 366);
             this.Controls.Add(this.passwordTB);
             this.Controls.Add(this.usernameTB);
             this.Controls.Add(this.passwordL);
             this.Controls.Add(this.usernameL);
             this.Controls.Add(this.loginL);
             this.Controls.Add(this.button1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "LoginView";
             this.Text = "Vanier SISD";
             this.ResumeLayout(false);
