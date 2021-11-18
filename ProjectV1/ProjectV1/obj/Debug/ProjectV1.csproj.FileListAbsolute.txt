@@ -8,3 +8,4 @@ C:\Users\Andy Nguyen-Chao\Documents\GitHub\AppDev_Project\ProjectV1\ProjectV1\ob
 C:\Users\Andy Nguyen-Chao\Documents\GitHub\AppDev_Project\ProjectV1\ProjectV1\obj\Debug\ProjectV1.csproj.CoreCompileInputs.cache
 C:\Users\Andy Nguyen-Chao\Documents\GitHub\AppDev_Project\ProjectV1\ProjectV1\obj\Debug\ProjectV1.exe
 C:\Users\Andy Nguyen-Chao\Documents\GitHub\AppDev_Project\ProjectV1\ProjectV1\obj\Debug\ProjectV1.pdb
+C:\Users\Andy Nguyen-Chao\Documents\GitHub\AppDev_Project\ProjectV1\ProjectV1\obj\Debug\ProjectV1.LoginView.resources

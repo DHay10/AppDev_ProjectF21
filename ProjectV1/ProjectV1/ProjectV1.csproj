@@ -78,6 +78,9 @@
     <Compile Include="StudentFileView.Designer.cs">
       <DependentUpon>StudentFileView.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="LoginView.resx">
+      <DependentUpon>LoginView.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="NewStudentView.resx">
       <DependentUpon>NewStudentView.cs</DependentUpon>
     </EmbeddedResource>
