@@ -1,7 +1,7 @@
 ﻿
 namespace ProjectV1
 {
-    partial class DatabaseForm
+    partial class DatabaseView
     {
         /// <summary>
         /// Required designer variable.

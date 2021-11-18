@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace ProjectV1
 {
-    public partial class DashboardForm : Form
+    public partial class DashboardView : Form
     {
-        public DashboardForm()
+        public DashboardView()
         {
             InitializeComponent();
         }

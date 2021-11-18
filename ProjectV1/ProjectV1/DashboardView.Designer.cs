@@ -1,7 +1,7 @@
 ﻿
 namespace ProjectV1
 {
-    partial class DashboardForm
+    partial class DashboardView
     {
         /// <summary>
         /// Required designer variable.
