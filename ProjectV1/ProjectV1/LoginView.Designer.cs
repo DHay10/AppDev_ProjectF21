@@ -39,8 +39,8 @@ namespace ProjectV1
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(249, 257);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button1.Location = new System.Drawing.Point(353, 48);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(56, 19);
             this.button1.TabIndex = 0;
@@ -81,7 +81,7 @@ namespace ProjectV1
             // usernameTB
             // 
             this.usernameTB.Location = new System.Drawing.Point(166, 141);
-            this.usernameTB.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.usernameTB.Margin = new System.Windows.Forms.Padding(2);
             this.usernameTB.Name = "usernameTB";
             this.usernameTB.Size = new System.Drawing.Size(76, 20);
             this.usernameTB.TabIndex = 4;
@@ -89,7 +89,7 @@ namespace ProjectV1
             // passwordTB
             // 
             this.passwordTB.Location = new System.Drawing.Point(166, 181);
-            this.passwordTB.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.passwordTB.Margin = new System.Windows.Forms.Padding(2);
             this.passwordTB.Name = "passwordTB";
             this.passwordTB.PasswordChar = '*';
             this.passwordTB.Size = new System.Drawing.Size(76, 20);
@@ -106,7 +106,7 @@ namespace ProjectV1
             this.Controls.Add(this.usernameL);
             this.Controls.Add(this.loginL);
             this.Controls.Add(this.button1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "LoginView";
             this.Text = "Vanier SISD";
             this.ResumeLayout(false);
