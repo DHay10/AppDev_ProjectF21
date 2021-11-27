@@ -32,26 +32,27 @@ namespace ProjectV1
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.studentFirstNameTb = new System.Windows.Forms.TextBox();
+            this.studentLastNameTb = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.fatherFirstNameTb = new System.Windows.Forms.TextBox();
+            this.fatherLastNameTb = new System.Windows.Forms.TextBox();
+            this.motherFirstNameTb = new System.Windows.Forms.TextBox();
+            this.motherLastNameTb = new System.Windows.Forms.TextBox();
+            this.parentCellTb = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.addressTb = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.studentCellTb = new System.Windows.Forms.TextBox();
+            this.newStudentSaveButton = new System.Windows.Forms.Button();
             this.label12 = new System.Windows.Forms.Label();
-            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.postalCodeTb = new System.Windows.Forms.TextBox();
+            this.exitButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -82,25 +83,25 @@ namespace ProjectV1
             this.label3.TabIndex = 2;
             this.label3.Text = "Last Name:";
             // 
-            // textBox1
+            // studentFirstNameTb
             // 
-            this.textBox1.Location = new System.Drawing.Point(19, 75);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(157, 20);
-            this.textBox1.TabIndex = 3;
+            this.studentFirstNameTb.Location = new System.Drawing.Point(19, 75);
+            this.studentFirstNameTb.Name = "studentFirstNameTb";
+            this.studentFirstNameTb.Size = new System.Drawing.Size(157, 20);
+            this.studentFirstNameTb.TabIndex = 3;
             // 
-            // textBox2
+            // studentLastNameTb
             // 
-            this.textBox2.Location = new System.Drawing.Point(189, 75);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(153, 20);
-            this.textBox2.TabIndex = 4;
+            this.studentLastNameTb.Location = new System.Drawing.Point(189, 75);
+            this.studentLastNameTb.Name = "studentLastNameTb";
+            this.studentLastNameTb.Size = new System.Drawing.Size(153, 20);
+            this.studentLastNameTb.TabIndex = 4;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(16, 152);
+            this.label4.Location = new System.Drawing.Point(13, 160);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(81, 17);
             this.label4.TabIndex = 5;
@@ -142,40 +143,40 @@ namespace ProjectV1
             this.label8.TabIndex = 9;
             this.label8.Text = "Mother last name:";
             // 
-            // textBox3
+            // fatherFirstNameTb
             // 
-            this.textBox3.Location = new System.Drawing.Point(16, 205);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(157, 20);
-            this.textBox3.TabIndex = 10;
+            this.fatherFirstNameTb.Location = new System.Drawing.Point(16, 205);
+            this.fatherFirstNameTb.Name = "fatherFirstNameTb";
+            this.fatherFirstNameTb.Size = new System.Drawing.Size(157, 20);
+            this.fatherFirstNameTb.TabIndex = 10;
             // 
-            // textBox4
+            // fatherLastNameTb
             // 
-            this.textBox4.Location = new System.Drawing.Point(189, 205);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(153, 20);
-            this.textBox4.TabIndex = 11;
+            this.fatherLastNameTb.Location = new System.Drawing.Point(189, 205);
+            this.fatherLastNameTb.Name = "fatherLastNameTb";
+            this.fatherLastNameTb.Size = new System.Drawing.Size(153, 20);
+            this.fatherLastNameTb.TabIndex = 11;
             // 
-            // textBox5
+            // motherFirstNameTb
             // 
-            this.textBox5.Location = new System.Drawing.Point(13, 246);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(157, 20);
-            this.textBox5.TabIndex = 12;
+            this.motherFirstNameTb.Location = new System.Drawing.Point(13, 246);
+            this.motherFirstNameTb.Name = "motherFirstNameTb";
+            this.motherFirstNameTb.Size = new System.Drawing.Size(157, 20);
+            this.motherFirstNameTb.TabIndex = 12;
             // 
-            // textBox6
+            // motherLastNameTb
             // 
-            this.textBox6.Location = new System.Drawing.Point(189, 246);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(153, 20);
-            this.textBox6.TabIndex = 13;
+            this.motherLastNameTb.Location = new System.Drawing.Point(189, 246);
+            this.motherLastNameTb.Name = "motherLastNameTb";
+            this.motherLastNameTb.Size = new System.Drawing.Size(153, 20);
+            this.motherLastNameTb.TabIndex = 13;
             // 
-            // textBox8
+            // parentCellTb
             // 
-            this.textBox8.Location = new System.Drawing.Point(12, 285);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(157, 20);
-            this.textBox8.TabIndex = 15;
+            this.parentCellTb.Location = new System.Drawing.Point(12, 285);
+            this.parentCellTb.Name = "parentCellTb";
+            this.parentCellTb.Size = new System.Drawing.Size(157, 20);
+            this.parentCellTb.TabIndex = 15;
             // 
             // label9
             // 
@@ -195,12 +196,12 @@ namespace ProjectV1
             this.label10.TabIndex = 17;
             this.label10.Text = "Address:";
             // 
-            // textBox7
+            // addressTb
             // 
-            this.textBox7.Location = new System.Drawing.Point(9, 339);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(160, 20);
-            this.textBox7.TabIndex = 18;
+            this.addressTb.Location = new System.Drawing.Point(9, 339);
+            this.addressTb.Name = "addressTb";
+            this.addressTb.Size = new System.Drawing.Size(160, 20);
+            this.addressTb.TabIndex = 18;
             // 
             // label11
             // 
@@ -211,21 +212,23 @@ namespace ProjectV1
             this.label11.TabIndex = 19;
             this.label11.Text = "Cellphone:";
             // 
-            // textBox9
+            // studentCellTb
             // 
-            this.textBox9.Location = new System.Drawing.Point(19, 118);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(100, 20);
-            this.textBox9.TabIndex = 20;
+            this.studentCellTb.Location = new System.Drawing.Point(19, 118);
+            this.studentCellTb.Name = "studentCellTb";
+            this.studentCellTb.Size = new System.Drawing.Size(100, 20);
+            this.studentCellTb.TabIndex = 20;
             // 
-            // button1
+            // newStudentSaveButton
             // 
-            this.button1.Location = new System.Drawing.Point(133, 395);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 21;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.newStudentSaveButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.newStudentSaveButton.Location = new System.Drawing.Point(46, 383);
+            this.newStudentSaveButton.Name = "newStudentSaveButton";
+            this.newStudentSaveButton.Size = new System.Drawing.Size(92, 35);
+            this.newStudentSaveButton.TabIndex = 21;
+            this.newStudentSaveButton.Text = "Save";
+            this.newStudentSaveButton.UseVisualStyleBackColor = true;
+            this.newStudentSaveButton.Click += new System.EventHandler(this.newStudentSaveButton_Click);
             // 
             // label12
             // 
@@ -236,38 +239,50 @@ namespace ProjectV1
             this.label12.TabIndex = 22;
             this.label12.Text = "Postal Code:";
             // 
-            // textBox10
+            // postalCodeTb
             // 
-            this.textBox10.Location = new System.Drawing.Point(192, 339);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(100, 20);
-            this.textBox10.TabIndex = 23;
+            this.postalCodeTb.Location = new System.Drawing.Point(192, 339);
+            this.postalCodeTb.Name = "postalCodeTb";
+            this.postalCodeTb.Size = new System.Drawing.Size(100, 20);
+            this.postalCodeTb.TabIndex = 23;
+            // 
+            // exitButton
+            // 
+            this.exitButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.exitButton.Location = new System.Drawing.Point(189, 384);
+            this.exitButton.Name = "exitButton";
+            this.exitButton.Size = new System.Drawing.Size(103, 35);
+            this.exitButton.TabIndex = 24;
+            this.exitButton.Text = "Exit";
+            this.exitButton.UseVisualStyleBackColor = true;
+            this.exitButton.Click += new System.EventHandler(this.exitButton_Click);
             // 
             // NewStudentView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(370, 430);
-            this.Controls.Add(this.textBox10);
+            this.Controls.Add(this.exitButton);
+            this.Controls.Add(this.postalCodeTb);
             this.Controls.Add(this.label12);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox9);
+            this.Controls.Add(this.newStudentSaveButton);
+            this.Controls.Add(this.studentCellTb);
             this.Controls.Add(this.label11);
-            this.Controls.Add(this.textBox7);
+            this.Controls.Add(this.addressTb);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.textBox8);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.parentCellTb);
+            this.Controls.Add(this.motherLastNameTb);
+            this.Controls.Add(this.motherFirstNameTb);
+            this.Controls.Add(this.fatherLastNameTb);
+            this.Controls.Add(this.fatherFirstNameTb);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.studentLastNameTb);
+            this.Controls.Add(this.studentFirstNameTb);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -284,25 +299,26 @@ namespace ProjectV1
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox studentFirstNameTb;
+        private System.Windows.Forms.TextBox studentLastNameTb;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox fatherFirstNameTb;
+        private System.Windows.Forms.TextBox fatherLastNameTb;
+        private System.Windows.Forms.TextBox motherFirstNameTb;
+        private System.Windows.Forms.TextBox motherLastNameTb;
+        private System.Windows.Forms.TextBox parentCellTb;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox addressTb;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox studentCellTb;
+        private System.Windows.Forms.Button newStudentSaveButton;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.TextBox textBox10;
+        private System.Windows.Forms.TextBox postalCodeTb;
+        private System.Windows.Forms.Button exitButton;
     }
 }

@@ -9,3 +9,14 @@ C:\Users\Andy Nguyen-Chao\Documents\GitHub\AppDev_Project\ProjectV1\ProjectV1\ob
 C:\Users\Andy Nguyen-Chao\Documents\GitHub\AppDev_Project\ProjectV1\ProjectV1\obj\Debug\ProjectV1.exe
 C:\Users\Andy Nguyen-Chao\Documents\GitHub\AppDev_Project\ProjectV1\ProjectV1\obj\Debug\ProjectV1.pdb
 C:\Users\Andy Nguyen-Chao\Documents\GitHub\AppDev_Project\ProjectV1\ProjectV1\obj\Debug\ProjectV1.LoginView.resources
+C:\Users\sarah\OneDrive\Documents\GitHub\AppDev_Project\ProjectV1\ProjectV1\bin\Debug\ProjectV1.exe.config
+C:\Users\sarah\OneDrive\Documents\GitHub\AppDev_Project\ProjectV1\ProjectV1\bin\Debug\ProjectV1.exe
+C:\Users\sarah\OneDrive\Documents\GitHub\AppDev_Project\ProjectV1\ProjectV1\bin\Debug\ProjectV1.pdb
+C:\Users\sarah\OneDrive\Documents\GitHub\AppDev_Project\ProjectV1\ProjectV1\obj\Debug\ProjectV1.csproj.AssemblyReference.cache
+C:\Users\sarah\OneDrive\Documents\GitHub\AppDev_Project\ProjectV1\ProjectV1\obj\Debug\ProjectV1.LoginView.resources
+C:\Users\sarah\OneDrive\Documents\GitHub\AppDev_Project\ProjectV1\ProjectV1\obj\Debug\ProjectV1.NewStudentView.resources
+C:\Users\sarah\OneDrive\Documents\GitHub\AppDev_Project\ProjectV1\ProjectV1\obj\Debug\ProjectV1.Properties.Resources.resources
+C:\Users\sarah\OneDrive\Documents\GitHub\AppDev_Project\ProjectV1\ProjectV1\obj\Debug\ProjectV1.csproj.GenerateResource.cache
+C:\Users\sarah\OneDrive\Documents\GitHub\AppDev_Project\ProjectV1\ProjectV1\obj\Debug\ProjectV1.csproj.CoreCompileInputs.cache
+C:\Users\sarah\OneDrive\Documents\GitHub\AppDev_Project\ProjectV1\ProjectV1\obj\Debug\ProjectV1.exe
+C:\Users\sarah\OneDrive\Documents\GitHub\AppDev_Project\ProjectV1\ProjectV1\obj\Debug\ProjectV1.pdb
