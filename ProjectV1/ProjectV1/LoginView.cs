@@ -17,7 +17,22 @@ namespace ProjectV1
             InitializeComponent();
         }
 
-        
+        private void EnterKey(object sender, KeyPressEventArgs e)
+        {
+            if (e.Equals(Keys.Enter))
+            {
+                if (usernameTB.Text == "user" && passwordTB.Text == "pass")
+                {
+                    DashboardView mainMenu = new DashboardView();
+                    mainMenu.ShowDialog();
+                }
+                else
+                {
+                    MessageBox.Show("Please enter a valid username and/or password", "Wrong username/password", MessageBoxButtons.OK,
+                        MessageBoxIcon.Error);
+                }
+            }
+        }
         private void loginButton_Click(object sender, EventArgs e)
         {
             if (usernameTB.Text == "user" && passwordTB.Text == "pass")
