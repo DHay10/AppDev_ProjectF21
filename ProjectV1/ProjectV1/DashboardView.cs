@@ -16,5 +16,19 @@ namespace ProjectV1
         {
             InitializeComponent();
         }
+
+        private void addNewStudentButton_Click(object sender, EventArgs e)
+        {
+            NewStudentView newStudent = new NewStudentView();
+            newStudent.ShowDialog();
+        }
+
+        private void searchStudentButton_Click(object sender, EventArgs e)
+        {
+            StudentFileView viewFile = new StudentFileView();
+            viewFile.ShowDialog();
+        }
     }
+
+
 }

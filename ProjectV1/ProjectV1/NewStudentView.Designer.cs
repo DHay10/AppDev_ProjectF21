@@ -52,7 +52,6 @@ namespace ProjectV1
             this.newStudentSaveButton = new System.Windows.Forms.Button();
             this.label12 = new System.Windows.Forms.Label();
             this.postalCodeTb = new System.Windows.Forms.TextBox();
-            this.exitButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -222,9 +221,9 @@ namespace ProjectV1
             // newStudentSaveButton
             // 
             this.newStudentSaveButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.newStudentSaveButton.Location = new System.Drawing.Point(46, 383);
+            this.newStudentSaveButton.Location = new System.Drawing.Point(107, 383);
             this.newStudentSaveButton.Name = "newStudentSaveButton";
-            this.newStudentSaveButton.Size = new System.Drawing.Size(92, 35);
+            this.newStudentSaveButton.Size = new System.Drawing.Size(126, 35);
             this.newStudentSaveButton.TabIndex = 21;
             this.newStudentSaveButton.Text = "Save";
             this.newStudentSaveButton.UseVisualStyleBackColor = true;
@@ -246,23 +245,11 @@ namespace ProjectV1
             this.postalCodeTb.Size = new System.Drawing.Size(100, 20);
             this.postalCodeTb.TabIndex = 23;
             // 
-            // exitButton
-            // 
-            this.exitButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.exitButton.Location = new System.Drawing.Point(189, 384);
-            this.exitButton.Name = "exitButton";
-            this.exitButton.Size = new System.Drawing.Size(103, 35);
-            this.exitButton.TabIndex = 24;
-            this.exitButton.Text = "Exit";
-            this.exitButton.UseVisualStyleBackColor = true;
-            this.exitButton.Click += new System.EventHandler(this.exitButton_Click);
-            // 
             // NewStudentView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(370, 430);
-            this.Controls.Add(this.exitButton);
             this.Controls.Add(this.postalCodeTb);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.newStudentSaveButton);
@@ -319,6 +306,5 @@ namespace ProjectV1
         private System.Windows.Forms.Button newStudentSaveButton;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.TextBox postalCodeTb;
-        private System.Windows.Forms.Button exitButton;
     }
 }

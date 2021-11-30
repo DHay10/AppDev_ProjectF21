@@ -42,12 +42,8 @@ namespace ProjectV1
                 fatherFirstNameTb.Text, fatherLastNameTb.Text, motherFirstNameTb.Text, motherLastNameTb.Text,
                 parentCellTb.Text, addressTb.Text, postalCodeTb.Text);
             studentId++;
-            MessageBox.Show($"{studentFirstNameTb.Text} was added to the system","complete", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            MessageBox.Show($"{studentFirstNameTb.Text} was added to the system","Complete", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
         }
 
-        private void exitButton_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
     }
 }

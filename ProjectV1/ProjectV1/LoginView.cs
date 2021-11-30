@@ -17,10 +17,19 @@ namespace ProjectV1
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        
+        private void loginButton_Click(object sender, EventArgs e)
         {
-            NewStudentView newStudent = new NewStudentView();
-            newStudent.ShowDialog();
+            if (usernameTB.Text == "user" && passwordTB.Text == "pass")
+            {
+                DashboardView mainMenu = new DashboardView();
+                mainMenu.ShowDialog();
+            }
+            else
+            {
+                MessageBox.Show("Please enter a valid username and/or password", "Wrong username/password",MessageBoxButtons.OK,
+                    MessageBoxIcon.Error);
+            }
         }
     }
 }

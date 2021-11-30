@@ -20,3 +20,4 @@ C:\Users\sarah\OneDrive\Documents\GitHub\AppDev_Project\ProjectV1\ProjectV1\obj\
 C:\Users\sarah\OneDrive\Documents\GitHub\AppDev_Project\ProjectV1\ProjectV1\obj\Debug\ProjectV1.csproj.CoreCompileInputs.cache
 C:\Users\sarah\OneDrive\Documents\GitHub\AppDev_Project\ProjectV1\ProjectV1\obj\Debug\ProjectV1.exe
 C:\Users\sarah\OneDrive\Documents\GitHub\AppDev_Project\ProjectV1\ProjectV1\obj\Debug\ProjectV1.pdb
+C:\Users\sarah\OneDrive\Documents\GitHub\AppDev_Project\ProjectV1\ProjectV1\obj\Debug\ProjectV1.DashboardView.resources
