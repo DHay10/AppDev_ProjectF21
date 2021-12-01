@@ -15,7 +15,7 @@ namespace ProjectV1
     {
         int studentId;
         string filepath = "studentCSV.txt";
-        private StreamReader fileReader;
+        string[] fields;
         public NewStudentView()
         {
             InitializeComponent();
@@ -41,40 +41,35 @@ namespace ProjectV1
 
         private void newStudentSaveButton_Click(object sender, EventArgs e)
         {
-            string[] values;
-            /*var inputRecord = fileReader.ReadLine();
-            string[] inputFields = inputRecord.Split(',');
-            int n = inputFields.Length - 10;
-            if (inputRecord == null)
+            try
             {
-                studentId = 0;
-            }
-            else
-            {
-                inputFields[n] = studentId.ToString();
-                studentId++;
-            }*/
-            /*using (var reader = new StreamReader(@filepath))
-            {
-                while (!reader.EndOfStream)
-                {
-                    var line = reader.ReadLine();
-                    values = line.Split(',');
-                }
-                if (reader == null)
+                string[] lines = System.IO.File.ReadAllLines(@filepath);
+                if (lines == null)
                 {
                     studentId = 0;
                 }
                 else
                 {
-                     values[values.Length-10];
+                    for (int i = 0; i < lines.Length; i++)
+                    {
+                        fields = lines[i].Split(',');
+                    }
+                    string stringStudentId = fields[fields.Length - 11];
+                    //studentId = int.Parse(stringStudentId);
+                    using (System.IO.StreamWriter streamWriter = new System.IO.StreamWriter(@filepath, true))
+                    {
+                        streamWriter.WriteLine(stringStudentId);
+                    }
                 }
-            }*/
-
+            }catch (Exception exs)
+            {
+                throw new ApplicationException("Something went wrong :", exs);
+            }
+            
+            
             addInfo(studentId, studentFirstNameTb.Text, studentLastNameTb.Text, studentCellTb.Text,
                 fatherFirstNameTb.Text, fatherLastNameTb.Text, motherFirstNameTb.Text, motherLastNameTb.Text,
                 parentCellTb.Text, addressTb.Text, postalCodeTb.Text);
-            studentId++;
             MessageBox.Show($"{studentFirstNameTb.Text} was added to the system","Complete", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             studentFirstNameTb.Clear();
             studentLastNameTb.Clear();
