@@ -1,2 +1,3 @@
-0,Sarah,Primavera,514-543-4024,Adam,Smith,Kara,Smith,514-302-4938,1234 Street,W3K 2L5
-0,Karen,Johnson,574-482-4957,John,Johnson,Tabitha,Johnson,463-583-5839,4444 Main Blvd.,G3D 1D8
+
+0,sarah,primavera,5144418014,michael,jdksn skd ,nnn,nnn,8493399,ndjnskj,njnjnj
+0,lhbjhb,jnjnjn,jnjnj,jnjnj,jnjn,jnjnj,jnjnj,jkn;kjn,jnjn,njnjjn
