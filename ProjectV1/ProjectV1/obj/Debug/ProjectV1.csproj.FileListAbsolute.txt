@@ -21,3 +21,15 @@ C:\Users\sarah\OneDrive\Documents\GitHub\AppDev_Project\ProjectV1\ProjectV1\obj\
 C:\Users\sarah\OneDrive\Documents\GitHub\AppDev_Project\ProjectV1\ProjectV1\obj\Debug\ProjectV1.exe
 C:\Users\sarah\OneDrive\Documents\GitHub\AppDev_Project\ProjectV1\ProjectV1\obj\Debug\ProjectV1.pdb
 C:\Users\sarah\OneDrive\Documents\GitHub\AppDev_Project\ProjectV1\ProjectV1\obj\Debug\ProjectV1.DashboardView.resources
+C:\Users\hendr\OneDrive\Documents\Desktop\Project\ProjectV1\ProjectV1\bin\Debug\ProjectV1.exe.config
+C:\Users\hendr\OneDrive\Documents\Desktop\Project\ProjectV1\ProjectV1\bin\Debug\ProjectV1.exe
+C:\Users\hendr\OneDrive\Documents\Desktop\Project\ProjectV1\ProjectV1\bin\Debug\ProjectV1.pdb
+C:\Users\hendr\OneDrive\Documents\Desktop\Project\ProjectV1\ProjectV1\obj\Debug\ProjectV1.csproj.AssemblyReference.cache
+C:\Users\hendr\OneDrive\Documents\Desktop\Project\ProjectV1\ProjectV1\obj\Debug\ProjectV1.DashboardView.resources
+C:\Users\hendr\OneDrive\Documents\Desktop\Project\ProjectV1\ProjectV1\obj\Debug\ProjectV1.LoginView.resources
+C:\Users\hendr\OneDrive\Documents\Desktop\Project\ProjectV1\ProjectV1\obj\Debug\ProjectV1.NewStudentView.resources
+C:\Users\hendr\OneDrive\Documents\Desktop\Project\ProjectV1\ProjectV1\obj\Debug\ProjectV1.Properties.Resources.resources
+C:\Users\hendr\OneDrive\Documents\Desktop\Project\ProjectV1\ProjectV1\obj\Debug\ProjectV1.csproj.GenerateResource.cache
+C:\Users\hendr\OneDrive\Documents\Desktop\Project\ProjectV1\ProjectV1\obj\Debug\ProjectV1.csproj.CoreCompileInputs.cache
+C:\Users\hendr\OneDrive\Documents\Desktop\Project\ProjectV1\ProjectV1\obj\Debug\ProjectV1.exe
+C:\Users\hendr\OneDrive\Documents\Desktop\Project\ProjectV1\ProjectV1\obj\Debug\ProjectV1.pdb

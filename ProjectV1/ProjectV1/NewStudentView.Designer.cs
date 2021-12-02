@@ -67,7 +67,7 @@ namespace ProjectV1
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(16, 59);
+            this.label2.Location = new System.Drawing.Point(9, 59);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(60, 13);
             this.label2.TabIndex = 1;
@@ -84,7 +84,7 @@ namespace ProjectV1
             // 
             // studentFirstNameTb
             // 
-            this.studentFirstNameTb.Location = new System.Drawing.Point(19, 75);
+            this.studentFirstNameTb.Location = new System.Drawing.Point(12, 75);
             this.studentFirstNameTb.Name = "studentFirstNameTb";
             this.studentFirstNameTb.Size = new System.Drawing.Size(157, 20);
             this.studentFirstNameTb.TabIndex = 3;
@@ -100,7 +100,7 @@ namespace ProjectV1
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(13, 160);
+            this.label4.Location = new System.Drawing.Point(9, 160);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(81, 17);
             this.label4.TabIndex = 5;
@@ -118,7 +118,7 @@ namespace ProjectV1
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(189, 189);
+            this.label6.Location = new System.Drawing.Point(186, 189);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(88, 13);
             this.label6.TabIndex = 7;
@@ -127,7 +127,7 @@ namespace ProjectV1
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(12, 230);
+            this.label7.Location = new System.Drawing.Point(9, 230);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(91, 13);
             this.label7.TabIndex = 8;
@@ -144,7 +144,7 @@ namespace ProjectV1
             // 
             // fatherFirstNameTb
             // 
-            this.fatherFirstNameTb.Location = new System.Drawing.Point(16, 205);
+            this.fatherFirstNameTb.Location = new System.Drawing.Point(12, 205);
             this.fatherFirstNameTb.Name = "fatherFirstNameTb";
             this.fatherFirstNameTb.Size = new System.Drawing.Size(157, 20);
             this.fatherFirstNameTb.TabIndex = 10;
@@ -158,7 +158,7 @@ namespace ProjectV1
             // 
             // motherFirstNameTb
             // 
-            this.motherFirstNameTb.Location = new System.Drawing.Point(13, 246);
+            this.motherFirstNameTb.Location = new System.Drawing.Point(12, 246);
             this.motherFirstNameTb.Name = "motherFirstNameTb";
             this.motherFirstNameTb.Size = new System.Drawing.Size(157, 20);
             this.motherFirstNameTb.TabIndex = 12;
@@ -180,7 +180,7 @@ namespace ProjectV1
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(12, 269);
+            this.label9.Location = new System.Drawing.Point(9, 269);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(175, 13);
             this.label9.TabIndex = 16;
@@ -189,7 +189,7 @@ namespace ProjectV1
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(12, 323);
+            this.label10.Location = new System.Drawing.Point(9, 323);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(48, 13);
             this.label10.TabIndex = 17;
@@ -197,15 +197,15 @@ namespace ProjectV1
             // 
             // addressTb
             // 
-            this.addressTb.Location = new System.Drawing.Point(9, 339);
+            this.addressTb.Location = new System.Drawing.Point(12, 339);
             this.addressTb.Name = "addressTb";
-            this.addressTb.Size = new System.Drawing.Size(160, 20);
+            this.addressTb.Size = new System.Drawing.Size(157, 20);
             this.addressTb.TabIndex = 18;
             // 
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(19, 102);
+            this.label11.Location = new System.Drawing.Point(9, 102);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(57, 13);
             this.label11.TabIndex = 19;
@@ -213,7 +213,7 @@ namespace ProjectV1
             // 
             // studentCellTb
             // 
-            this.studentCellTb.Location = new System.Drawing.Point(19, 118);
+            this.studentCellTb.Location = new System.Drawing.Point(12, 118);
             this.studentCellTb.Name = "studentCellTb";
             this.studentCellTb.Size = new System.Drawing.Size(100, 20);
             this.studentCellTb.TabIndex = 20;
@@ -221,7 +221,7 @@ namespace ProjectV1
             // newStudentSaveButton
             // 
             this.newStudentSaveButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.newStudentSaveButton.Location = new System.Drawing.Point(107, 383);
+            this.newStudentSaveButton.Location = new System.Drawing.Point(121, 383);
             this.newStudentSaveButton.Name = "newStudentSaveButton";
             this.newStudentSaveButton.Size = new System.Drawing.Size(126, 35);
             this.newStudentSaveButton.TabIndex = 21;
@@ -232,7 +232,7 @@ namespace ProjectV1
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(189, 323);
+            this.label12.Location = new System.Drawing.Point(186, 323);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(67, 13);
             this.label12.TabIndex = 22;
@@ -240,7 +240,7 @@ namespace ProjectV1
             // 
             // postalCodeTb
             // 
-            this.postalCodeTb.Location = new System.Drawing.Point(192, 339);
+            this.postalCodeTb.Location = new System.Drawing.Point(189, 339);
             this.postalCodeTb.Name = "postalCodeTb";
             this.postalCodeTb.Size = new System.Drawing.Size(100, 20);
             this.postalCodeTb.TabIndex = 23;
