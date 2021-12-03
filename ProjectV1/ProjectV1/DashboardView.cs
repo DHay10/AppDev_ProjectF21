@@ -28,6 +28,12 @@ namespace ProjectV1
             StudentFileView viewFile = new StudentFileView();
             viewFile.ShowDialog();
         }
+
+        private void studentdbB_Click(object sender, EventArgs e)
+        {
+            DatabaseView viewDB = new DatabaseView();
+            viewDB.ShowDialog();
+        }
     }
 
 

@@ -40,6 +40,7 @@ namespace ProjectV1
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.studentdbB = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -69,6 +70,7 @@ namespace ProjectV1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel1.Controls.Add(this.studentdbB);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.Vlogo);
             this.panel1.Controls.Add(this.pictureBox2);
@@ -148,6 +150,16 @@ namespace ProjectV1
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
+            // studentdbB
+            // 
+            this.studentdbB.Location = new System.Drawing.Point(36, 314);
+            this.studentdbB.Name = "studentdbB";
+            this.studentdbB.Size = new System.Drawing.Size(136, 71);
+            this.studentdbB.TabIndex = 7;
+            this.studentdbB.Text = "Student Database";
+            this.studentdbB.UseVisualStyleBackColor = true;
+            this.studentdbB.Click += new System.EventHandler(this.studentdbB_Click);
+            // 
             // DashboardView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -178,5 +190,6 @@ namespace ProjectV1
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button studentdbB;
     }
 }
