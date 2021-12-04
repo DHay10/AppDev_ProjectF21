@@ -30,27 +30,10 @@ namespace ProjectV1
         {
 
         }
-<<<<<<< HEAD
 
         private void refreshB_Click(object sender, EventArgs e)
         {
-            try
-            {
-                using (SqlConnection connection = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;Integrated Security=True"))
-                {
-                    SqlDataAdapter adapter = new SqlDataAdapter();
-                    adapter.SelectCommand = new SqlCommand("SELECT * FROM tblStudent", connection);
-                    dataSet.Clear();
-                    adapter.Fill(dataSet);
-                    studentDGView.DataSource = dataSet.Tables[0];
-                }
-            }
-            catch (Exception exs)
-            {
-                throw new ApplicationException("Something went wrong :", exs);
-            }
+
         }
-=======
->>>>>>> parent of cc89560 (Changed the newStudentView to add to database)
     }
 }
