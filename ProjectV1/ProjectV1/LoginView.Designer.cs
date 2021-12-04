@@ -110,6 +110,7 @@ namespace ProjectV1
             this.passwordTB.PasswordChar = '*';
             this.passwordTB.Size = new System.Drawing.Size(196, 20);
             this.passwordTB.TabIndex = 5;
+            this.passwordTB.KeyDown += new System.Windows.Forms.KeyEventHandler(this.OnKeyEnterDown);
             // 
             // welcomeLabel
             // 
