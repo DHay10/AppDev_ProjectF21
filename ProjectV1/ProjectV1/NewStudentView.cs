@@ -14,7 +14,7 @@ namespace ProjectV1
     public partial class NewStudentView : Form
     {
         int studentId;
-        string filepath = "studentCSV.txt";
+        string filepath = "student.csv";
         string[] fields;
         public NewStudentView()
         {

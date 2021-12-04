@@ -6,11 +6,12 @@ using System.Threading.Tasks;
 
 namespace ProjectV1
 {
+    [Serializable]
     class Student : Person
     {
         private int _studentID;
-        private Person _father;
-        private Person _mother;
+        private Parent _parent1;
+        private Parent _parent2;
 
         public static int nextID = 1;
 
@@ -18,12 +19,12 @@ namespace ProjectV1
         {
         }
 
-        public Student(Person father, Person mother, string fName, string lName, string phoneNum, string address, string postalCode) : 
-            base(fName, lName, phoneNum, address, postalCode)
+        public Student(Parent parent1, Parent parent2, string fName, string lName, string phoneNum, string address, string postalCode, string emergencyNum) : 
+            base(fName, lName, phoneNum, address, postalCode, emergencyNum)
         {
             _studentID = ++nextID;
-            _father = father;
-            _mother = mother;
+            _parent1 = parent1;
+            _parent2 = parent2;
         }
     }
 }

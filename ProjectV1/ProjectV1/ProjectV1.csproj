@@ -61,6 +61,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BaseSystem.cs" />
     <Compile Include="DashboardView.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -85,6 +86,7 @@
     <Compile Include="NewStudentView.Designer.cs">
       <DependentUpon>NewStudentView.cs</DependentUpon>
     </Compile>
+    <Compile Include="Parent.cs" />
     <Compile Include="Person.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
