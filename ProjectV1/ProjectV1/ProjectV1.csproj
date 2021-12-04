@@ -61,7 +61,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BaseSystem.cs" />
     <Compile Include="DashboardView.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -86,8 +85,6 @@
     <Compile Include="NewStudentView.Designer.cs">
       <DependentUpon>NewStudentView.cs</DependentUpon>
     </Compile>
-    <Compile Include="Parent.cs" />
-    <Compile Include="Person.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Student.cs" />
@@ -95,6 +92,11 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>StudentDBDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="StudentDBDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StudentDBDataSet1.xsd</DependentUpon>
     </Compile>
     <Compile Include="StudentFileView.cs">
       <SubType>Form</SubType>
@@ -142,6 +144,17 @@
     </None>
     <None Include="StudentDBDataSet.xss">
       <DependentUpon>StudentDBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="StudentDBDataSet1.xsc">
+      <DependentUpon>StudentDBDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="StudentDBDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>StudentDBDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="StudentDBDataSet1.xss">
+      <DependentUpon>StudentDBDataSet1.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>
