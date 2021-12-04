@@ -32,28 +32,26 @@ namespace ProjectV1
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.studentFNameTB = new System.Windows.Forms.TextBox();
-            this.studentLNameTB = new System.Windows.Forms.TextBox();
+            this.studentFirstNameTb = new System.Windows.Forms.TextBox();
+            this.studentLastNameTb = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.fatherNameL = new System.Windows.Forms.Label();
-            this.motherNameL = new System.Windows.Forms.Label();
-            this.fatherNameTB = new System.Windows.Forms.TextBox();
-            this.motherNameTB = new System.Windows.Forms.TextBox();
-            this.emergencyNumberTB = new System.Windows.Forms.TextBox();
-            this.emergencyPhoneL = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.fatherFirstNameTb = new System.Windows.Forms.TextBox();
+            this.fatherLastNameTb = new System.Windows.Forms.TextBox();
+            this.motherFirstNameTb = new System.Windows.Forms.TextBox();
+            this.motherLastNameTb = new System.Windows.Forms.TextBox();
+            this.parentCellTb = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.addressTB = new System.Windows.Forms.TextBox();
+            this.addressTb = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
-            this.phoneNumTB = new System.Windows.Forms.TextBox();
+            this.studentCellTb = new System.Windows.Forms.TextBox();
             this.newStudentSaveButton = new System.Windows.Forms.Button();
             this.label12 = new System.Windows.Forms.Label();
             this.postalCodeTb = new System.Windows.Forms.TextBox();
-            this.cityTB = new System.Windows.Forms.TextBox();
-            this.cityL = new System.Windows.Forms.Label();
-            this.countryTB = new System.Windows.Forms.TextBox();
-            this.countryL = new System.Windows.Forms.Label();
-            this.dobTB = new System.Windows.Forms.TextBox();
-            this.dobL = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -84,93 +82,125 @@ namespace ProjectV1
             this.label3.TabIndex = 2;
             this.label3.Text = "Last Name:";
             // 
-            // studentFNameTB
+            // studentFirstNameTb
             // 
-            this.studentFNameTB.Location = new System.Drawing.Point(12, 75);
-            this.studentFNameTB.Name = "studentFNameTB";
-            this.studentFNameTB.Size = new System.Drawing.Size(157, 20);
-            this.studentFNameTB.TabIndex = 3;
+            this.studentFirstNameTb.Location = new System.Drawing.Point(12, 75);
+            this.studentFirstNameTb.Name = "studentFirstNameTb";
+            this.studentFirstNameTb.Size = new System.Drawing.Size(157, 20);
+            this.studentFirstNameTb.TabIndex = 3;
             // 
-            // studentLNameTB
+            // studentLastNameTb
             // 
-            this.studentLNameTB.Location = new System.Drawing.Point(189, 75);
-            this.studentLNameTB.Name = "studentLNameTB";
-            this.studentLNameTB.Size = new System.Drawing.Size(153, 20);
-            this.studentLNameTB.TabIndex = 4;
+            this.studentLastNameTb.Location = new System.Drawing.Point(189, 75);
+            this.studentLastNameTb.Name = "studentLastNameTb";
+            this.studentLastNameTb.Size = new System.Drawing.Size(153, 20);
+            this.studentLastNameTb.TabIndex = 4;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(9, 254);
+            this.label4.Location = new System.Drawing.Point(9, 160);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(81, 17);
             this.label4.TabIndex = 5;
             this.label4.Text = "Parent info:";
             // 
-            // fatherNameL
+            // label5
             // 
-            this.fatherNameL.AutoSize = true;
-            this.fatherNameL.Location = new System.Drawing.Point(12, 283);
-            this.fatherNameL.Name = "fatherNameL";
-            this.fatherNameL.Size = new System.Drawing.Size(78, 13);
-            this.fatherNameL.TabIndex = 6;
-            this.fatherNameL.Text = "Father\'s Name:";
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(12, 189);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(88, 13);
+            this.label5.TabIndex = 6;
+            this.label5.Text = "Father first name:";
             // 
-            // motherNameL
+            // label6
             // 
-            this.motherNameL.AutoSize = true;
-            this.motherNameL.Location = new System.Drawing.Point(186, 283);
-            this.motherNameL.Name = "motherNameL";
-            this.motherNameL.Size = new System.Drawing.Size(81, 13);
-            this.motherNameL.TabIndex = 7;
-            this.motherNameL.Text = "Mother\'s Name:";
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(186, 189);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(88, 13);
+            this.label6.TabIndex = 7;
+            this.label6.Text = "Father last name:";
             // 
-            // fatherNameTB
+            // label7
             // 
-            this.fatherNameTB.Location = new System.Drawing.Point(12, 299);
-            this.fatherNameTB.Name = "fatherNameTB";
-            this.fatherNameTB.Size = new System.Drawing.Size(157, 20);
-            this.fatherNameTB.TabIndex = 10;
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(9, 230);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(91, 13);
+            this.label7.TabIndex = 8;
+            this.label7.Text = "Mother first name:";
             // 
-            // motherNameTB
+            // label8
             // 
-            this.motherNameTB.Location = new System.Drawing.Point(189, 299);
-            this.motherNameTB.Name = "motherNameTB";
-            this.motherNameTB.Size = new System.Drawing.Size(153, 20);
-            this.motherNameTB.TabIndex = 11;
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(186, 230);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(91, 13);
+            this.label8.TabIndex = 9;
+            this.label8.Text = "Mother last name:";
             // 
-            // emergencyNumberTB
+            // fatherFirstNameTb
             // 
-            this.emergencyNumberTB.Location = new System.Drawing.Point(12, 347);
-            this.emergencyNumberTB.Name = "emergencyNumberTB";
-            this.emergencyNumberTB.Size = new System.Drawing.Size(157, 20);
-            this.emergencyNumberTB.TabIndex = 15;
+            this.fatherFirstNameTb.Location = new System.Drawing.Point(12, 205);
+            this.fatherFirstNameTb.Name = "fatherFirstNameTb";
+            this.fatherFirstNameTb.Size = new System.Drawing.Size(157, 20);
+            this.fatherFirstNameTb.TabIndex = 10;
             // 
-            // emergencyPhoneL
+            // fatherLastNameTb
             // 
-            this.emergencyPhoneL.AutoSize = true;
-            this.emergencyPhoneL.Location = new System.Drawing.Point(9, 331);
-            this.emergencyPhoneL.Name = "emergencyPhoneL";
-            this.emergencyPhoneL.Size = new System.Drawing.Size(134, 13);
-            this.emergencyPhoneL.TabIndex = 16;
-            this.emergencyPhoneL.Text = "Emergency Phone Number";
+            this.fatherLastNameTb.Location = new System.Drawing.Point(189, 205);
+            this.fatherLastNameTb.Name = "fatherLastNameTb";
+            this.fatherLastNameTb.Size = new System.Drawing.Size(153, 20);
+            this.fatherLastNameTb.TabIndex = 11;
+            // 
+            // motherFirstNameTb
+            // 
+            this.motherFirstNameTb.Location = new System.Drawing.Point(12, 246);
+            this.motherFirstNameTb.Name = "motherFirstNameTb";
+            this.motherFirstNameTb.Size = new System.Drawing.Size(157, 20);
+            this.motherFirstNameTb.TabIndex = 12;
+            // 
+            // motherLastNameTb
+            // 
+            this.motherLastNameTb.Location = new System.Drawing.Point(189, 246);
+            this.motherLastNameTb.Name = "motherLastNameTb";
+            this.motherLastNameTb.Size = new System.Drawing.Size(153, 20);
+            this.motherLastNameTb.TabIndex = 13;
+            // 
+            // parentCellTb
+            // 
+            this.parentCellTb.Location = new System.Drawing.Point(12, 285);
+            this.parentCellTb.Name = "parentCellTb";
+            this.parentCellTb.Size = new System.Drawing.Size(157, 20);
+            this.parentCellTb.TabIndex = 15;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(9, 269);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(175, 13);
+            this.label9.TabIndex = 16;
+            this.label9.Text = "Cellphone of either mother or father:";
             // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(9, 150);
+            this.label10.Location = new System.Drawing.Point(9, 323);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(48, 13);
             this.label10.TabIndex = 17;
             this.label10.Text = "Address:";
             // 
-            // addressTB
+            // addressTb
             // 
-            this.addressTB.Location = new System.Drawing.Point(12, 166);
-            this.addressTB.Name = "addressTB";
-            this.addressTB.Size = new System.Drawing.Size(157, 20);
-            this.addressTB.TabIndex = 18;
+            this.addressTb.Location = new System.Drawing.Point(12, 339);
+            this.addressTb.Name = "addressTb";
+            this.addressTb.Size = new System.Drawing.Size(157, 20);
+            this.addressTb.TabIndex = 18;
             // 
             // label11
             // 
@@ -181,17 +211,17 @@ namespace ProjectV1
             this.label11.TabIndex = 19;
             this.label11.Text = "Cellphone:";
             // 
-            // phoneNumTB
+            // studentCellTb
             // 
-            this.phoneNumTB.Location = new System.Drawing.Point(12, 118);
-            this.phoneNumTB.Name = "phoneNumTB";
-            this.phoneNumTB.Size = new System.Drawing.Size(100, 20);
-            this.phoneNumTB.TabIndex = 20;
+            this.studentCellTb.Location = new System.Drawing.Point(12, 118);
+            this.studentCellTb.Name = "studentCellTb";
+            this.studentCellTb.Size = new System.Drawing.Size(100, 20);
+            this.studentCellTb.TabIndex = 20;
             // 
             // newStudentSaveButton
             // 
             this.newStudentSaveButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.newStudentSaveButton.Location = new System.Drawing.Point(121, 423);
+            this.newStudentSaveButton.Location = new System.Drawing.Point(121, 383);
             this.newStudentSaveButton.Name = "newStudentSaveButton";
             this.newStudentSaveButton.Size = new System.Drawing.Size(126, 35);
             this.newStudentSaveButton.TabIndex = 21;
@@ -202,7 +232,7 @@ namespace ProjectV1
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(186, 150);
+            this.label12.Location = new System.Drawing.Point(186, 323);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(67, 13);
             this.label12.TabIndex = 22;
@@ -210,86 +240,36 @@ namespace ProjectV1
             // 
             // postalCodeTb
             // 
-            this.postalCodeTb.Location = new System.Drawing.Point(189, 166);
+            this.postalCodeTb.Location = new System.Drawing.Point(189, 339);
             this.postalCodeTb.Name = "postalCodeTb";
             this.postalCodeTb.Size = new System.Drawing.Size(100, 20);
             this.postalCodeTb.TabIndex = 23;
-            // 
-            // cityTB
-            // 
-            this.cityTB.Location = new System.Drawing.Point(12, 214);
-            this.cityTB.Name = "cityTB";
-            this.cityTB.Size = new System.Drawing.Size(157, 20);
-            this.cityTB.TabIndex = 25;
-            // 
-            // cityL
-            // 
-            this.cityL.AutoSize = true;
-            this.cityL.Location = new System.Drawing.Point(9, 198);
-            this.cityL.Name = "cityL";
-            this.cityL.Size = new System.Drawing.Size(27, 13);
-            this.cityL.TabIndex = 24;
-            this.cityL.Text = "City:";
-            // 
-            // countryTB
-            // 
-            this.countryTB.Location = new System.Drawing.Point(189, 214);
-            this.countryTB.Name = "countryTB";
-            this.countryTB.Size = new System.Drawing.Size(157, 20);
-            this.countryTB.TabIndex = 27;
-            // 
-            // countryL
-            // 
-            this.countryL.AutoSize = true;
-            this.countryL.Location = new System.Drawing.Point(186, 198);
-            this.countryL.Name = "countryL";
-            this.countryL.Size = new System.Drawing.Size(46, 13);
-            this.countryL.TabIndex = 26;
-            this.countryL.Text = "Country:";
-            // 
-            // dobTB
-            // 
-            this.dobTB.Location = new System.Drawing.Point(189, 118);
-            this.dobTB.Name = "dobTB";
-            this.dobTB.Size = new System.Drawing.Size(157, 20);
-            this.dobTB.TabIndex = 29;
-            // 
-            // dobL
-            // 
-            this.dobL.AutoSize = true;
-            this.dobL.Location = new System.Drawing.Point(186, 102);
-            this.dobL.Name = "dobL";
-            this.dobL.Size = new System.Drawing.Size(71, 13);
-            this.dobL.TabIndex = 28;
-            this.dobL.Text = "Date Of Birth:";
             // 
             // NewStudentView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(370, 485);
-            this.Controls.Add(this.dobTB);
-            this.Controls.Add(this.dobL);
-            this.Controls.Add(this.countryTB);
-            this.Controls.Add(this.countryL);
-            this.Controls.Add(this.cityTB);
-            this.Controls.Add(this.cityL);
+            this.ClientSize = new System.Drawing.Size(370, 430);
             this.Controls.Add(this.postalCodeTb);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.newStudentSaveButton);
-            this.Controls.Add(this.phoneNumTB);
+            this.Controls.Add(this.studentCellTb);
             this.Controls.Add(this.label11);
-            this.Controls.Add(this.addressTB);
+            this.Controls.Add(this.addressTb);
             this.Controls.Add(this.label10);
-            this.Controls.Add(this.emergencyPhoneL);
-            this.Controls.Add(this.emergencyNumberTB);
-            this.Controls.Add(this.motherNameTB);
-            this.Controls.Add(this.fatherNameTB);
-            this.Controls.Add(this.motherNameL);
-            this.Controls.Add(this.fatherNameL);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.parentCellTb);
+            this.Controls.Add(this.motherLastNameTb);
+            this.Controls.Add(this.motherFirstNameTb);
+            this.Controls.Add(this.fatherLastNameTb);
+            this.Controls.Add(this.fatherFirstNameTb);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.studentLNameTB);
-            this.Controls.Add(this.studentFNameTB);
+            this.Controls.Add(this.studentLastNameTb);
+            this.Controls.Add(this.studentFirstNameTb);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -306,27 +286,25 @@ namespace ProjectV1
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox studentFNameTB;
-        private System.Windows.Forms.TextBox studentLNameTB;
+        private System.Windows.Forms.TextBox studentFirstNameTb;
+        private System.Windows.Forms.TextBox studentLastNameTb;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label fatherNameL;
-        private System.Windows.Forms.Label motherNameL;
-        private System.Windows.Forms.TextBox fatherNameTB;
-        private System.Windows.Forms.TextBox motherNameTB;
-        private System.Windows.Forms.TextBox emergencyNumberTB;
-        private System.Windows.Forms.Label emergencyPhoneL;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TextBox fatherFirstNameTb;
+        private System.Windows.Forms.TextBox fatherLastNameTb;
+        private System.Windows.Forms.TextBox motherFirstNameTb;
+        private System.Windows.Forms.TextBox motherLastNameTb;
+        private System.Windows.Forms.TextBox parentCellTb;
+        private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox addressTB;
+        private System.Windows.Forms.TextBox addressTb;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.TextBox phoneNumTB;
+        private System.Windows.Forms.TextBox studentCellTb;
         private System.Windows.Forms.Button newStudentSaveButton;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.TextBox postalCodeTb;
-        private System.Windows.Forms.TextBox cityTB;
-        private System.Windows.Forms.Label cityL;
-        private System.Windows.Forms.TextBox countryTB;
-        private System.Windows.Forms.Label countryL;
-        private System.Windows.Forms.TextBox dobTB;
-        private System.Windows.Forms.Label dobL;
     }
 }

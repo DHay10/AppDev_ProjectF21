@@ -28,10 +28,13 @@ namespace ProjectV1
         {
 
         }
+<<<<<<< HEAD
 
         private void refreshB_Click(object sender, EventArgs e)
         {
             
         }
+=======
+>>>>>>> parent of cc89560 (Changed the newStudentView to add to database)
     }
 }
