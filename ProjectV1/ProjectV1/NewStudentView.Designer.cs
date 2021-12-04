@@ -249,7 +249,7 @@ namespace ProjectV1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(370, 430);
+            this.ClientSize = new System.Drawing.Size(735, 430);
             this.Controls.Add(this.postalCodeTb);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.newStudentSaveButton);

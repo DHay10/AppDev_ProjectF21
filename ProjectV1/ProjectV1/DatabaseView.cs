@@ -25,15 +25,5 @@ namespace ProjectV1
             this.studentTableAdapter.Fill(this.studentDBDataSet.Student);
 
         }
-
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void refreshB_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }
