@@ -14,10 +14,10 @@ namespace ProjectV1
         private string _fName;
         private string _lName;
         private DateTime _dob;
-        private int _phoneNum;
+        private string _phoneNum;
         private string _Address;
         private string _postalCode;
-        private int _emergencyNum;
+        private string _emergencyNum;
         private string _parent1Name;
         private string _parent2Name;
 =======
@@ -32,11 +32,15 @@ namespace ProjectV1
         }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         public Student(string fName, string lName, DateTime dob, int phoneNum, string address, string postalCode, int emergencyNum, string parent1Name, string parent2Name)
 =======
         public Student(Parent parent1, Parent parent2, string fName, string lName, string phoneNum, string address, string postalCode, string emergencyNum) : 
             base(fName, lName, phoneNum, address, postalCode, emergencyNum)
 >>>>>>> parent of cc89560 (Changed the newStudentView to add to database)
+=======
+        public Student(string fName, string lName, DateTime dob, string phoneNum, string address, string postalCode, string emergencyNum, string parent1Name, string parent2Name)
+>>>>>>> parent of 1660485 (Revert "Deleted DBset and any connections")
         {
             _studentID = ++nextID;
             _parent1 = parent1;
