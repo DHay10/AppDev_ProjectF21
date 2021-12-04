@@ -101,6 +101,7 @@ namespace ProjectV1
             this.usernameTB.Name = "usernameTB";
             this.usernameTB.Size = new System.Drawing.Size(196, 20);
             this.usernameTB.TabIndex = 4;
+            this.usernameTB.KeyDown += new System.Windows.Forms.KeyEventHandler(this.OnKeyEnterDown);
             // 
             // passwordTB
             // 
