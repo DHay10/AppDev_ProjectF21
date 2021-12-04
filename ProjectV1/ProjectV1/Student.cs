@@ -13,10 +13,10 @@ namespace ProjectV1
         private string _fName;
         private string _lName;
         private DateTime _dob;
-        private string _phoneNum;
+        private int _phoneNum;
         private string _Address;
         private string _postalCode;
-        private string _emergencyNum;
+        private int _emergencyNum;
         private string _parent1Name;
         private string _parent2Name;
 
@@ -26,7 +26,7 @@ namespace ProjectV1
         {
         }
 
-        public Student(string fName, string lName, DateTime dob, string phoneNum, string address, string postalCode, string emergencyNum, string parent1Name, string parent2Name)
+        public Student(string fName, string lName, DateTime dob, int phoneNum, string address, string postalCode, int emergencyNum, string parent1Name, string parent2Name)
         {
             _studentID = nextID++;
             _fName = fName;
