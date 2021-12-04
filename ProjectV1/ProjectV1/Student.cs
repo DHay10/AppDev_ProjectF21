@@ -7,10 +7,9 @@ using System.Threading.Tasks;
 namespace ProjectV1
 {
     [Serializable]
-    class Student : Person
+    class Student
     {
         private int _studentID;
-<<<<<<< HEAD
         private string _fName;
         private string _lName;
         private DateTime _dob;
@@ -20,10 +19,6 @@ namespace ProjectV1
         private string _emergencyNum;
         private string _parent1Name;
         private string _parent2Name;
-=======
-        private Parent _parent1;
-        private Parent _parent2;
->>>>>>> parent of cc89560 (Changed the newStudentView to add to database)
 
         public static int nextID = 1;
 
@@ -31,20 +26,19 @@ namespace ProjectV1
         {
         }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-        public Student(string fName, string lName, DateTime dob, int phoneNum, string address, string postalCode, int emergencyNum, string parent1Name, string parent2Name)
-=======
-        public Student(Parent parent1, Parent parent2, string fName, string lName, string phoneNum, string address, string postalCode, string emergencyNum) : 
-            base(fName, lName, phoneNum, address, postalCode, emergencyNum)
->>>>>>> parent of cc89560 (Changed the newStudentView to add to database)
-=======
-        public Student(string fName, string lName, DateTime dob, string phoneNum, string address, string postalCode, string emergencyNum, string parent1Name, string parent2Name)
->>>>>>> parent of 1660485 (Revert "Deleted DBset and any connections")
+        public Student(string fName, string lName, DateTime dob, string phoneNum, string address, string postalCode, 
+            string emergencyNum, string parent1Name, string parent2Name)
         {
-            _studentID = ++nextID;
-            _parent1 = parent1;
-            _parent2 = parent2;
+            _studentID = nextID++;
+            _fName = fName;
+            _lName = lName;
+            _dob = dob;
+            _phoneNum = phoneNum;
+            _Address = address;
+            _postalCode = postalCode;
+            _emergencyNum = emergencyNum;
+            _parent1Name = parent1Name;
+            _parent2Name = parent2Name;
         }
     }
 }
