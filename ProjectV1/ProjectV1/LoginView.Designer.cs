@@ -172,6 +172,8 @@ namespace ProjectV1
             this.Controls.Add(this.loginButton);
             this.ForeColor = System.Drawing.SystemColors.WindowText;
             this.Margin = new System.Windows.Forms.Padding(2);
+            this.MaximumSize = new System.Drawing.Size(402, 390);
+            this.MinimumSize = new System.Drawing.Size(402, 390);
             this.Name = "LoginView";
             this.Text = "Vanier SISD";
             this.panel1.ResumeLayout(false);
