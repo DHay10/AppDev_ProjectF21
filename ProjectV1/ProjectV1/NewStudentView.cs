@@ -27,6 +27,7 @@ namespace ProjectV1
             {
                 DateTime dobConvert = DateTime.Parse(dob);
                 Student student = new Student(fName, lName, dobConvert, cell, address, postal, emergCell, fatherName, motherName);
+                DBSystem.Students.Add(student);
                 string[] splitDOB = dob.Split(',');
                 string year = splitDOB[0];
                 string month = " " + splitDOB[1];
