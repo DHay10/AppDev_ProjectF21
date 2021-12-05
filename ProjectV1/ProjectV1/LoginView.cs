@@ -38,7 +38,11 @@ namespace ProjectV1
         {
             if (e.KeyCode == Keys.Enter)
             {
-                if (usernameTB.Text == "user" && passwordTB.Text == "pass")
+                if (usernameTB.Focused)
+                {
+                    passwordTB.Focus();
+                }
+                else if (usernameTB.Text == "user" && passwordTB.Text == "pass")
                 {
                     this.Hide();
                     DashboardView mainMenu = new DashboardView();
