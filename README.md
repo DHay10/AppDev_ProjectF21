@@ -56,8 +56,8 @@
 - [ ] Duplicates
 - [ ] Error Messages
 - [ ] Specific Cases(Number/Symbols)
-- [ ] Implement New Student View (`Sarah`)
-  - [ ] Input Fields
+- [x] Implement New Student View (`Sarah`)
+  - [x] Input Fields
     - [x] First Name / Last Name
     - [x] Date Of Birth
     - [x] Phone Number
@@ -66,20 +66,17 @@
     - [x] City
     - [x] Parents' Name
     - [x] Save Button
-    - [ ] Preview File
-  - [ ] CSV Conversion
-- [ ] Implement Database View (`Andy`)
-  - [ ] Add database reading
-    - [ ] Add column with values
+    - [x] Preview File
+  - [x] CSV Conversion
+- [x] Implement Database View (`Andy` & `Hendrick`)
+  - [x] Add database reading
+    - [x] Add column with values
   - [ ] Add Sort/Filtering Function
   - [ ] Add Search Box Function
-  - [ ] Link to Student File View
-- [ ] Implement Student View (`Hendrick`)
-  - [ ] Show values
+  - [x] Show values
   - [ ] Update Info Function
-  - [ ] Next/Previous Button
-  - [ ] Return Button
-  - [ ] Delete Function
+  - [x] Next/Previous Button
+  - [x] Delete Function
 
 ## Database
 

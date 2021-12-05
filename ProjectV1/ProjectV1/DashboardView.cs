@@ -22,12 +22,6 @@ namespace ProjectV1
             NewStudentView newStudent = new NewStudentView();
             newStudent.ShowDialog();
         }
-        //search for student button
-        private void searchStudentButton_Click(object sender, EventArgs e)
-        {
-            StudentFileView viewFile = new StudentFileView();
-            viewFile.ShowDialog();
-        }
         //student database button
         private void studentdbB_Click(object sender, EventArgs e)
         {

@@ -241,7 +241,7 @@ namespace ProjectV1
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(146, 13);
             this.label6.TabIndex = 24;
-            this.label6.Text = "Date of Birth (YYYY,MM,DD):";
+            this.label6.Text = "Date of Birth (YYYY-MM-DD):";
             // 
             // dobTb
             // 

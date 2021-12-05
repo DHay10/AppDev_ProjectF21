@@ -61,30 +61,36 @@ namespace ProjectV1
         public string PhoneNum
         {
             get => _phoneNum;
+            set => _phoneNum = value;
         }
 
         public string Address
         {
             get => _address;
+            set => _address = value;
         }
         public string PostalCode
         {
             get => _postalCode;
+            set => _postalCode = value;
         }
 
         public string EmergencyNum
         {
             get => _emergencyNum;
+            set => _emergencyNum = value;
         }
 
         public string Parent1Name
         {
             get => _parent1Name;
+            set => _parent1Name = value;
         }
 
         public string Parent2Name
         {
             get => _parent2Name;
+            set => _parent2Name = value;
         }
     }
 }

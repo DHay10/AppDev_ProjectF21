@@ -20,6 +20,20 @@ namespace ProjectV1
             }
         }
 
+        public static void updateCSVFile()
+        {
+            System.IO.File.WriteAllText(@"studentCSV.txt", string.Empty);
+            using (System.IO.StreamWriter streamWriter = new System.IO.StreamWriter(@"studentCSV.txt", true))
+            {
+                foreach (Student s in _students)
+                {
+                    streamWriter.WriteLine(s.StudentID + "," + s.FName + "," + s.LName + "," + s.Dob.ToString("d") + ","
+                            + s.PhoneNum + "," + s.Address + "," + s.PostalCode + "," + s.EmergencyNum + "," + s.Parent1Name + "," + s.Parent2Name);
+                }
+            }
+        }
+
+
         public static List<Student> Students => _students;
     }
 }

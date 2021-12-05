@@ -39,6 +39,10 @@ namespace ProjectV1
             studentTableDGV.Columns["EmergencyNum"].Visible = false;
             studentTableDGV.Columns["Parent1Name"].Visible = false;
             studentTableDGV.Columns["Parent2Name"].Visible = false;
+            studentTableDGV.Rows[0].Selected = true;
+            rowIdx = studentTableDGV.SelectedRows[0].Index;
+            Student currentStudent = (Student)studentTableDGV.Rows[rowIdx].DataBoundItem;
+            displayFile(currentStudent);
         }
 
         private void refreshB_Click(object sender, EventArgs e)
@@ -49,8 +53,13 @@ namespace ProjectV1
                 bs.Add(s);
             }
             studentTableDGV.Refresh();
+            studentTableDGV.Rows[0].Selected = true;
+            rowIdx = studentTableDGV.SelectedRows[0].Index;
+            Student currentStudent = (Student)studentTableDGV.Rows[rowIdx].DataBoundItem;
+            displayFile(currentStudent);
         }
 
+        int rowIdx;
         private void studentTableDGV_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
             Student currentStudent = (Student) studentTableDGV.CurrentRow.DataBoundItem;
@@ -69,6 +78,46 @@ namespace ProjectV1
         private void studentTableDGV_RowHeaderMouseClick(object sender, DataGridViewCellMouseEventArgs e)
         {
             Student currentStudent = (Student)studentTableDGV.CurrentRow.DataBoundItem;
+            displayFile(currentStudent);
+        }
+
+        private void prevB_Click(object sender, EventArgs e)
+        {
+            rowIdx = studentTableDGV.SelectedRows[0].Index;
+            if (rowIdx > 0) {
+                studentTableDGV.Rows[--rowIdx].Selected = true;
+                Student currentStudent = (Student) studentTableDGV.SelectedRows[0].DataBoundItem;
+                displayFile(currentStudent);
+            }
+            else
+            {
+                rowIdx = studentTableDGV.RowCount - 1;
+                studentTableDGV.Rows[rowIdx].Selected = true;
+                Student currentStudent = (Student) studentTableDGV.SelectedRows[0].DataBoundItem;
+                displayFile(currentStudent);
+            }
+        }
+
+        private void nextB_Click(object sender, EventArgs e)
+        {
+            rowIdx = studentTableDGV.SelectedRows[0].Index;
+            if (rowIdx < studentTableDGV.RowCount - 1)
+            {
+                studentTableDGV.Rows[++rowIdx].Selected = true;
+                Student currentStudent = (Student) studentTableDGV.SelectedRows[0].DataBoundItem;
+                displayFile(currentStudent);
+            }
+            else
+            {
+                rowIdx = 0;
+                studentTableDGV.Rows[rowIdx].Selected = true;
+                Student currentStudent = (Student) studentTableDGV.SelectedRows[0].DataBoundItem;
+                displayFile(currentStudent);
+            }
+        }
+
+        private void displayFile(Student currentStudent)
+        {
             idTB.Text = string.Format("{0:D8}", currentStudent.StudentID);
             fNameTB.Text = currentStudent.FName;
             lNameTB.Text = currentStudent.LName;
@@ -79,6 +128,19 @@ namespace ProjectV1
             emergencyNumTB.Text = currentStudent.EmergencyNum;
             fGuardianNameTB.Text = currentStudent.Parent1Name;
             sGuardianNameTB.Text = currentStudent.Parent2Name;
+        }
+
+        private void updateB_Click(object sender, EventArgs e)
+        {
+            Student currentStudent = (Student)studentTableDGV.SelectedRows[0].DataBoundItem;
+            currentStudent.PhoneNum = phoneNumTB.Text;
+            currentStudent.Address = addressTB.Text;
+            currentStudent.PostalCode = postalCodeTB.Text;
+            currentStudent.EmergencyNum = emergencyNumTB.Text;
+            currentStudent.Parent1Name = fGuardianNameTB.Text;
+            currentStudent.Parent2Name = sGuardianNameTB.Text;
+            DBSystem.updateCSVFile();
+            studentTableDGV.Refresh();
         }
     }
 }

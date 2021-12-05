@@ -31,8 +31,8 @@ namespace ProjectV1
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DashboardView));
             this.addNewStudentButton = new System.Windows.Forms.Button();
-            this.searchStudentButton = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.studentdbB = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.Vlogo = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -40,7 +40,6 @@ namespace ProjectV1
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.studentdbB = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -56,16 +55,6 @@ namespace ProjectV1
             this.addNewStudentButton.UseVisualStyleBackColor = true;
             this.addNewStudentButton.Click += new System.EventHandler(this.addNewStudentButton_Click);
             // 
-            // searchStudentButton
-            // 
-            this.searchStudentButton.Location = new System.Drawing.Point(36, 223);
-            this.searchStudentButton.Name = "searchStudentButton";
-            this.searchStudentButton.Size = new System.Drawing.Size(136, 71);
-            this.searchStudentButton.TabIndex = 1;
-            this.searchStudentButton.Text = "Search for a student";
-            this.searchStudentButton.UseVisualStyleBackColor = true;
-            this.searchStudentButton.Click += new System.EventHandler(this.searchStudentButton_Click);
-            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
@@ -76,11 +65,20 @@ namespace ProjectV1
             this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.addNewStudentButton);
-            this.panel1.Controls.Add(this.searchStudentButton);
             this.panel1.Location = new System.Drawing.Point(-1, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(222, 523);
             this.panel1.TabIndex = 2;
+            // 
+            // studentdbB
+            // 
+            this.studentdbB.Location = new System.Drawing.Point(36, 314);
+            this.studentdbB.Name = "studentdbB";
+            this.studentdbB.Size = new System.Drawing.Size(136, 71);
+            this.studentdbB.TabIndex = 7;
+            this.studentdbB.Text = "Student Database";
+            this.studentdbB.UseVisualStyleBackColor = true;
+            this.studentdbB.Click += new System.EventHandler(this.studentdbB_Click);
             // 
             // label1
             // 
@@ -150,16 +148,6 @@ namespace ProjectV1
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // studentdbB
-            // 
-            this.studentdbB.Location = new System.Drawing.Point(36, 314);
-            this.studentdbB.Name = "studentdbB";
-            this.studentdbB.Size = new System.Drawing.Size(136, 71);
-            this.studentdbB.TabIndex = 7;
-            this.studentdbB.Text = "Student Database";
-            this.studentdbB.UseVisualStyleBackColor = true;
-            this.studentdbB.Click += new System.EventHandler(this.studentdbB_Click);
-            // 
             // DashboardView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -181,7 +169,6 @@ namespace ProjectV1
         #endregion
 
         private System.Windows.Forms.Button addNewStudentButton;
-        private System.Windows.Forms.Button searchStudentButton;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label Vlogo;

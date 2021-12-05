@@ -32,15 +32,10 @@ namespace ProjectV1
                 Student student = new Student(fName, lName, dobConvert, cell, address, postal, emergCell, fatherName, motherName);
                 //adding the new student to the databse
                 DBSystem.Students.Add(student);
-                //spliting up the date of birth so in the CSV file it doesn't separate with commas
-                string[] splitDOB = dob.Split(',');
-                string year = splitDOB[0];
-                string month = " " + splitDOB[1];
-                string day = " " + splitDOB[2];
                 //using streamWriter to write to the csv file all the parameters
                 using (System.IO.StreamWriter streamWriter = new System.IO.StreamWriter(@filepath, true))
                 {
-                    streamWriter.WriteLine(student.StudentID + "," + fName + "," + lName + ","  + year+month+day + "," 
+                    streamWriter.WriteLine(student.StudentID + "," + fName + "," + lName + ","  + dob + "," 
                         +cell + "," + address + "," + postal + "," + emergCell + "," + fatherName + "," + motherName);
                 }
             }
