@@ -53,10 +53,32 @@ namespace ProjectV1
 
         private void studentTableDGV_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-            //this.Hide();
-            //StudentFileView studentFile = new StudentFileView(this.bs.Current);
-            //mainMenu.FormClosed += (s, args) => this.Close();
-            //mainMenu.Show();
+            Student currentStudent = (Student) studentTableDGV.CurrentRow.DataBoundItem;
+            idTB.Text = currentStudent.StudentID.ToString();
+            fNameTB.Text = currentStudent.FName;
+            lNameTB.Text = currentStudent.LName;
+            dobTB.Text = currentStudent.Dob.ToString();
+            phoneNumTB.Text = currentStudent.PhoneNum;
+            addressTB.Text = currentStudent.Address;
+            postalCodeTB.Text = currentStudent.PostalCode;
+            emergencyNumTB.Text = currentStudent.EmergencyNum;
+            fGuardianNameTB.Text = currentStudent.Parent1Name;
+            sGuardianNameTB.Text = currentStudent.Parent2Name;
+        }
+
+        private void studentTableDGV_RowHeaderMouseClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            Student currentStudent = (Student)studentTableDGV.CurrentRow.DataBoundItem;
+            idTB.Text = string.Format("{0:D8}", currentStudent.StudentID);
+            fNameTB.Text = currentStudent.FName;
+            lNameTB.Text = currentStudent.LName;
+            dobTB.Text = currentStudent.Dob.ToString("d");
+            phoneNumTB.Text = currentStudent.PhoneNum;
+            addressTB.Text = currentStudent.Address;
+            postalCodeTB.Text = currentStudent.PostalCode;
+            emergencyNumTB.Text = currentStudent.EmergencyNum;
+            fGuardianNameTB.Text = currentStudent.Parent1Name;
+            sGuardianNameTB.Text = currentStudent.Parent2Name;
         }
     }
 }
