@@ -15,6 +15,7 @@ namespace ProjectV1
         public LoginView()
         {
             InitializeComponent();
+            DBSystem.initData();
         }
 
         private void loginButton_Click(object sender, EventArgs e)

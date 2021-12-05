@@ -19,8 +19,6 @@ namespace ProjectV1
         private string _parent1Name;
         private string _parent2Name;
 
-        public static int nextID = 1;
-
         public Student()
         {
         }
@@ -28,7 +26,7 @@ namespace ProjectV1
         public Student(string fName, string lName, DateTime dob, string phoneNum, string address, string postalCode, 
             string emergencyNum, string parent1Name, string parent2Name)
         {
-            _studentID = nextID++;
+            _studentID = DBSystem.Students.Count + 1;
             _fName = fName;
             _lName = lName;
             _dob = dob;
