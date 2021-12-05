@@ -157,6 +157,8 @@ namespace ProjectV1
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);
+            this.MaximumSize = new System.Drawing.Size(908, 562);
+            this.MinimumSize = new System.Drawing.Size(908, 562);
             this.Name = "DashboardView";
             this.Text = "Dashboard";
             this.panel1.ResumeLayout(false);

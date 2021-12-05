@@ -376,6 +376,7 @@ namespace ProjectV1
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.refreshB);
+            this.MaximumSize = new System.Drawing.Size(1260, 500);
             this.MinimumSize = new System.Drawing.Size(1260, 500);
             this.Name = "DatabaseView";
             this.Text = "DatabaseForm";

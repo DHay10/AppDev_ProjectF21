@@ -525,6 +525,8 @@ namespace ProjectV1
             this.Controls.Add(this.label2);
             this.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.Margin = new System.Windows.Forms.Padding(2);
+            this.MaximumSize = new System.Drawing.Size(751, 469);
+            this.MinimumSize = new System.Drawing.Size(751, 469);
             this.Name = "NewStudentView";
             this.Text = "NewStudentView";
             this.panel1.ResumeLayout(false);

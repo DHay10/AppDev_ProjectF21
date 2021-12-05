@@ -51,6 +51,16 @@ namespace ProjectV1
         {
             try
             {
+                //if first name,last name AND phone number are the same,throw excpetion
+                foreach (Student s in DBSystem.Students)
+                {
+                    if (studentFirstNameTb.Text == s.FName || studentLastNameTb.Text == s.LName || 
+                        studentCellTb.Text == s.PhoneNum)
+                    {
+                        throw new ArgumentException();
+                    }
+                }
+                //if phone numbers are not added in correctly, throw exception
                 Regex regEx = new Regex(@"^\([0-9]{3}\)[0-9]{3}\-[0-9]{4}$");
 
                 if (regEx.IsMatch(studentCellTb.Text) == false || regEx.IsMatch(parentCellTb.Text) == false)
@@ -84,9 +94,9 @@ namespace ProjectV1
                 addressTb.Clear();
                 postalCodeTb.Clear();
             }
-            catch (ArgumentNullException exs)
+            catch (ArgumentNullException ex)
             {
-                MessageBox.Show("All boxes must be filled out. Make sure you entered all of the student's info \n"+ exs,
+                MessageBox.Show("All boxes must be filled out. Make sure you entered all of the student's info \n"+ ex,
                     "Not everything is filled", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             catch(InvalidOperationException ex)
@@ -94,7 +104,11 @@ namespace ProjectV1
                 MessageBox.Show("Must enter a valid phone number. Format for phone is (XXX)XXX-XXXX \n" + ex,
                     "Must enter proper phone number", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            
+            catch(ArgumentException ex)
+            {
+                MessageBox.Show("This student already exists \n" + ex,
+                    "Student already exists", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
         //preview button method
         private void previewButton_Click(object sender, EventArgs e)
