@@ -38,9 +38,9 @@ namespace ProjectV1
             _parent2Name = parent2Name;
         }
 
-        public int getStudentId()
+        public int StudentID
         {
-            return _studentID;
+            get => _studentID;
         }
 
         public string FName

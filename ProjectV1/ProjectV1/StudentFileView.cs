@@ -12,9 +12,12 @@ namespace ProjectV1
 {
     public partial class StudentFileView : Form
     {
+
         public StudentFileView()
         {
             InitializeComponent();
         }
+
+        
     }
 }
