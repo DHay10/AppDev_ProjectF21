@@ -13,25 +13,29 @@ namespace ProjectV1
 {
     public partial class NewStudentView : Form
     {
-        int studentId;
-        string filepath = "student.csv";
-        string[] fields;
+        string filepath = "studentCSV.txt";
 
         public NewStudentView()
         {
             InitializeComponent();
         }
 
-        public void addInfo(int id, string fName, string lName, string cell, string fatherFName, string fatherLName,
-            string motherFName, string motherLName, string parentCell, string address, string postal)
+        public void addInfo(string fName, string lName, string cell, string dob, string fatherName, string motherName,
+            string emergCell, string address, string postal)
         {
             try
             {
+                DateTime dobConvert = DateTime.Parse(dobTb.Text);
+                Student student = new Student(studentFirstNameTb.Text, studentLastNameTb.Text, dobConvert, studentCellTb.Text,
+                    addressTb.Text, postalCodeTb.Text, parentCellTb.Text, fatherFirstNameTb.Text, motherFirstNameTb.Text);
+                string[] splitDOB = dob.Split(',');
+                string year = splitDOB[0];
+                string month = " " + splitDOB[1];
+                string day = " " + splitDOB[2];
                 using (System.IO.StreamWriter streamWriter = new System.IO.StreamWriter(@filepath, true))
                 {
-                    streamWriter.WriteLine(id + "," + fName + "," + lName + "," + cell + "," + fatherFName
-                        + "," + fatherLName + "," + motherFName + "," + motherLName + "," + parentCell + "," + address
-                        + "," + postal);
+                    streamWriter.WriteLine(student.getStudentId()+ "," + fName + "," + lName + "," + cell + ","  + year+month+day + "," +
+                        fatherName + ","+ motherName + ","+ emergCell + "," + address + "," + postal);
                 }
             }
             catch (Exception ex)
@@ -45,45 +49,23 @@ namespace ProjectV1
         {
             try
             {
-                string[] lines = System.IO.File.ReadAllLines(@filepath);
-                if (lines == null)
-                {
-                    studentId = 0;
-                }
-                else
-                {
-                    for (int i = 0; i < lines.Length; i++)
-                    {
-                        fields = lines[i].Split(',');
-                    }
-                    string stringStudentId = fields[fields.Length - 11];
-                    //studentId = int.Parse(stringStudentId);
-                    using (System.IO.StreamWriter streamWriter = new System.IO.StreamWriter(@filepath, true))
-                    {
-                        streamWriter.WriteLine(stringStudentId);
-                    }
-                }
+                addInfo(studentFirstNameTb.Text, studentLastNameTb.Text, studentCellTb.Text, dobTb.Text,
+                 fatherFirstNameTb.Text, motherFirstNameTb.Text, parentCellTb.Text, addressTb.Text, postalCodeTb.Text);
             }
             catch (Exception exs)
             {
                 throw new ApplicationException("Something went wrong :", exs);
             }
-
-
-            //addInfo(studentId, studentFirstNameTb.Text, studentLastNameTb.Text, studentCellTb.Text,
-            //    fatherNameTB.Text, motherNameTB.Text, motherFirstNameTb.Text, motherLastNameTb.Text,
-            //    emergencyNumberTB.Text, addressTb.Text, postalCodeTb.Text);
-
             MessageBox.Show($"{studentFirstNameTb.Text} was added to the system","Complete", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             studentFirstNameTb.Clear();
             studentLastNameTb.Clear();
             studentCellTb.Clear();
             fatherFirstNameTb.Clear();
-            fatherLastNameTb.Clear();
             motherFirstNameTb.Clear();
-            motherLastNameTb.Clear();
+            dobTb.Clear();
             parentCellTb.Clear();
             addressTb.Clear();
+            postalCodeTb.Clear();
         }
     }
 }
