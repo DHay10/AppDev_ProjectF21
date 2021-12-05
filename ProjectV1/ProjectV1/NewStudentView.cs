@@ -66,5 +66,30 @@ namespace ProjectV1
             addressTb.Clear();
             postalCodeTb.Clear();
         }
+
+        private void previewButton_Click(object sender, EventArgs e)
+        {
+            previewLabel.Text = "Preview of Student:";
+            fNameLabel.Text = "First Name:";
+            lNameLabel.Text = "Last Name:";
+            cellLabel.Text = "Cellphone:";
+            dobLabel.Text = "Date of Birth:";
+            fatherNameLabel.Text = "Father Name:";
+            motherNameLabel.Text = "Mother Name:";
+            emergLabel.Text = "Emergency Cell:";
+            addyLabel.Text = "Address:";
+            postalLabel.Text = "Postal Code:";
+
+            previewfName.Text = studentFirstNameTb.Text;
+            previewlName.Text = studentLastNameTb.Text;
+            previewCell.Text = studentCellTb.Text;
+            previewDob.Text = dobTb.Text;
+            previewFatherName.Text = fatherFirstNameTb.Text;
+            previewMotherName.Text = motherFirstNameTb.Text;
+            previewEmerg.Text = parentCellTb.Text;
+            previewAddy.Text = addressTb.Text;
+            previewPostal.Text = postalCodeTb.Text;
+
+        }
     }
 }
