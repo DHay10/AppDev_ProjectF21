@@ -33,8 +33,6 @@ C:\Users\hendr\OneDrive\Documents\Desktop\Project\ProjectV1\ProjectV1\obj\Debug\
 C:\Users\hendr\OneDrive\Documents\Desktop\Project\ProjectV1\ProjectV1\obj\Debug\ProjectV1.csproj.CoreCompileInputs.cache
 C:\Users\hendr\OneDrive\Documents\Desktop\Project\ProjectV1\ProjectV1\obj\Debug\ProjectV1.exe
 C:\Users\hendr\OneDrive\Documents\Desktop\Project\ProjectV1\ProjectV1\obj\Debug\ProjectV1.pdb
-C:\Users\Andy\Documents\GitHub\AppDev_Project\ProjectV1\ProjectV1\bin\Debug\StudentDB.mdf
-C:\Users\Andy\Documents\GitHub\AppDev_Project\ProjectV1\ProjectV1\bin\Debug\StudentDB_log.ldf
 C:\Users\Andy\Documents\GitHub\AppDev_Project\ProjectV1\ProjectV1\bin\Debug\ProjectV1.exe.config
 C:\Users\Andy\Documents\GitHub\AppDev_Project\ProjectV1\ProjectV1\bin\Debug\ProjectV1.exe
 C:\Users\Andy\Documents\GitHub\AppDev_Project\ProjectV1\ProjectV1\bin\Debug\ProjectV1.pdb

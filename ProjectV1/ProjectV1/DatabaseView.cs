@@ -21,8 +21,6 @@ namespace ProjectV1
 
         private void DatabaseView_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'studentDBDataSet.Student' table. You can move, or remove it, as needed.
-            this.studentTableAdapter.Fill(this.studentDBDataSet.Student);
             bs.DataSource = typeof(Student);
             studentTableDGV.DataSource = bs;
             foreach (Student s in DBSystem.Students)

@@ -31,37 +31,18 @@ namespace ProjectV1
         {
             this.components = new System.ComponentModel.Container();
             this.studentBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.studentDBDataSet = new ProjectV1.StudentDBDataSet();
-            this.studentTableAdapter = new ProjectV1.StudentDBDataSetTableAdapters.StudentTableAdapter();
-            this.tableAdapterManager = new ProjectV1.StudentDBDataSetTableAdapters.TableAdapterManager();
             this.refreshB = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.studentTableDGV = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.studentBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.studentDBDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.studentTableDGV)).BeginInit();
             this.SuspendLayout();
             // 
             // studentBindingSource
             // 
             this.studentBindingSource.DataMember = "Student";
-            this.studentBindingSource.DataSource = this.studentDBDataSet;
-            // 
-            // studentDBDataSet
-            // 
-            this.studentDBDataSet.DataSetName = "StudentDBDataSet";
-            this.studentDBDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // studentTableAdapter
-            // 
-            this.studentTableAdapter.ClearBeforeFill = true;
-            // 
-            // tableAdapterManager
-            // 
-            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
-            this.tableAdapterManager.StudentTableAdapter = this.studentTableAdapter;
-            this.tableAdapterManager.UpdateOrder = ProjectV1.StudentDBDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            //
             // 
             // refreshB
             // 
@@ -118,7 +99,6 @@ namespace ProjectV1
             this.Text = "DatabaseForm";
             this.Load += new System.EventHandler(this.DatabaseView_Load);
             ((System.ComponentModel.ISupportInitialize)(this.studentBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.studentDBDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.studentTableDGV)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -126,10 +106,7 @@ namespace ProjectV1
         }
 
         #endregion
-        private StudentDBDataSet studentDBDataSet;
         private System.Windows.Forms.BindingSource studentBindingSource;
-        private StudentDBDataSetTableAdapters.StudentTableAdapter studentTableAdapter;
-        private StudentDBDataSetTableAdapters.TableAdapterManager tableAdapterManager;
         private System.Windows.Forms.Button refreshB;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.TextBox textBox1;
