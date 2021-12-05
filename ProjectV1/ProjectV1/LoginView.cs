@@ -15,15 +15,18 @@ namespace ProjectV1
         public LoginView()
         {
             InitializeComponent();
-            DBSystem.initData();
+            DBSystem.initData(); //initializing database system
         }
 
+        //login button method
         private void loginButton_Click(object sender, EventArgs e)
         {
+            //if user enters correct username and password, goes to dashboard
             if (usernameTB.Text == "user" && passwordTB.Text == "pass")
             {
-                this.Hide();
+                this.Hide();//hides login page
                 DashboardView mainMenu = new DashboardView();
+                //if close main menu, close whole system
                 mainMenu.FormClosed += (s, args) => this.Close();
                 mainMenu.Show();
             }
@@ -36,6 +39,7 @@ namespace ProjectV1
 
         private void OnKeyEnterDown(object sender, KeyEventArgs e)
         {
+            //if press enter either goes to net textbox or logs in
             if (e.KeyCode == Keys.Enter)
             {
                 if (usernameTB.Focused)
