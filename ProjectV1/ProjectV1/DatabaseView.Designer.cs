@@ -100,13 +100,15 @@ namespace ProjectV1
             this.studentTableDGV.AllowUserToAddRows = false;
             this.studentTableDGV.AllowUserToDeleteRows = false;
             this.studentTableDGV.AllowUserToResizeRows = false;
+            this.studentTableDGV.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.studentTableDGV.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.studentTableDGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.studentTableDGV.Location = new System.Drawing.Point(13, 42);
             this.studentTableDGV.MultiSelect = false;
             this.studentTableDGV.Name = "studentTableDGV";
             this.studentTableDGV.ReadOnly = true;
-            this.studentTableDGV.Size = new System.Drawing.Size(667, 423);
+            this.studentTableDGV.Size = new System.Drawing.Size(667, 407);
             this.studentTableDGV.TabIndex = 5;
             this.studentTableDGV.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.studentTableDGV_CellContentDoubleClick);
             this.studentTableDGV.RowHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.studentTableDGV_RowHeaderMouseClick);
@@ -144,13 +146,13 @@ namespace ProjectV1
             this.infoPreviewP.Controls.Add(this.titlePreviewL);
             this.infoPreviewP.Location = new System.Drawing.Point(687, 12);
             this.infoPreviewP.Name = "infoPreviewP";
-            this.infoPreviewP.Size = new System.Drawing.Size(547, 453);
+            this.infoPreviewP.Size = new System.Drawing.Size(545, 437);
             this.infoPreviewP.TabIndex = 6;
             // 
             // nextB
             // 
             this.nextB.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.nextB.Location = new System.Drawing.Point(85, 424);
+            this.nextB.Location = new System.Drawing.Point(85, 408);
             this.nextB.Name = "nextB";
             this.nextB.Size = new System.Drawing.Size(75, 23);
             this.nextB.TabIndex = 23;
@@ -161,7 +163,7 @@ namespace ProjectV1
             // prevB
             // 
             this.prevB.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.prevB.Location = new System.Drawing.Point(4, 424);
+            this.prevB.Location = new System.Drawing.Point(4, 408);
             this.prevB.Name = "prevB";
             this.prevB.Size = new System.Drawing.Size(75, 23);
             this.prevB.TabIndex = 22;
@@ -172,7 +174,7 @@ namespace ProjectV1
             // updateB
             // 
             this.updateB.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.updateB.Location = new System.Drawing.Point(467, 425);
+            this.updateB.Location = new System.Drawing.Point(465, 409);
             this.updateB.Name = "updateB";
             this.updateB.Size = new System.Drawing.Size(75, 23);
             this.updateB.TabIndex = 21;
@@ -182,16 +184,20 @@ namespace ProjectV1
             // 
             // sGuardianNameTB
             // 
+            this.sGuardianNameTB.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.sGuardianNameTB.Location = new System.Drawing.Point(277, 234);
             this.sGuardianNameTB.Name = "sGuardianNameTB";
-            this.sGuardianNameTB.Size = new System.Drawing.Size(265, 20);
+            this.sGuardianNameTB.Size = new System.Drawing.Size(263, 20);
             this.sGuardianNameTB.TabIndex = 20;
             // 
             // fGuardianNameTB
             // 
+            this.fGuardianNameTB.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.fGuardianNameTB.Location = new System.Drawing.Point(277, 208);
             this.fGuardianNameTB.Name = "fGuardianNameTB";
-            this.fGuardianNameTB.Size = new System.Drawing.Size(265, 20);
+            this.fGuardianNameTB.Size = new System.Drawing.Size(263, 20);
             this.fGuardianNameTB.TabIndex = 19;
             // 
             // emergencyNumTB
@@ -210,15 +216,15 @@ namespace ProjectV1
             // 
             // addressTB
             // 
+            this.addressTB.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.addressTB.Location = new System.Drawing.Point(277, 130);
             this.addressTB.Name = "addressTB";
-            this.addressTB.Size = new System.Drawing.Size(265, 20);
+            this.addressTB.Size = new System.Drawing.Size(263, 20);
             this.addressTB.TabIndex = 16;
             // 
             // phoneNumTB
             // 
-            this.phoneNumTB.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.phoneNumTB.Location = new System.Drawing.Point(277, 104);
             this.phoneNumTB.Name = "phoneNumTB";
             this.phoneNumTB.Size = new System.Drawing.Size(84, 20);
@@ -239,7 +245,7 @@ namespace ProjectV1
             this.lNameTB.Location = new System.Drawing.Point(277, 52);
             this.lNameTB.Name = "lNameTB";
             this.lNameTB.ReadOnly = true;
-            this.lNameTB.Size = new System.Drawing.Size(265, 20);
+            this.lNameTB.Size = new System.Drawing.Size(263, 20);
             this.lNameTB.TabIndex = 13;
             // 
             // fNameTB
@@ -249,7 +255,7 @@ namespace ProjectV1
             this.fNameTB.Location = new System.Drawing.Point(277, 26);
             this.fNameTB.Name = "fNameTB";
             this.fNameTB.ReadOnly = true;
-            this.fNameTB.Size = new System.Drawing.Size(265, 20);
+            this.fNameTB.Size = new System.Drawing.Size(263, 20);
             this.fNameTB.TabIndex = 12;
             // 
             // idTB
@@ -363,12 +369,14 @@ namespace ProjectV1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1246, 477);
+            this.AutoScroll = true;
+            this.ClientSize = new System.Drawing.Size(1244, 461);
             this.Controls.Add(this.infoPreviewP);
             this.Controls.Add(this.studentTableDGV);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.refreshB);
+            this.MinimumSize = new System.Drawing.Size(1260, 500);
             this.Name = "DatabaseView";
             this.Text = "DatabaseForm";
             this.Load += new System.EventHandler(this.DatabaseView_Load);

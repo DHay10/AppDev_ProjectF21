@@ -1,7 +1,3 @@
-1,sarah,primavera,2003-02-16,514-441-8014,2397 buttLane Street,W3G 6H7,514-449-2137,michael,caroline
-2,sarah,prime,2003-12-13,514-123-1234,addy,post,emergcell,mickey,bitch
-3,a,a,2003-11-11,514,8310,h2p,514,dadaa,da
-4,b,b,2003-12-12,678,666,h2p,438,mama,ma
-5,c,c,2000-11-11,438,222,h2x,428,da,ma
-6,d,d,2000-12-12,514,223,h1x,428,pa,ma
-7,andy,Nguyen-Chao,2003-07-16,514,2222,h2p,514,idk,idk
+1,Sarah,Primavera,2003-02-16,(514)441-8014,2397 buttLane Street,W3G 6H7,514-449-2137,Michael,Caroline
+2,Andy-Tason,Nguyen-Chao,2003-07-16,(514)382-7919,8310 Avenue Christophe-Colomb,H2P 1X3,514-666-6969,Yong Chao,Ming Chao
+3,Hendrick,Armendariz-Reyes,2001-01-01,(514)420-6969,123 Vanier Street,H1E 2F3,514-382-7919,Test1,Test2
