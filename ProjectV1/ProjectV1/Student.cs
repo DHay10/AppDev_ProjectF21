@@ -6,7 +6,6 @@ using System.Threading.Tasks;
 
 namespace ProjectV1
 {
-    [Serializable]
     class Student
     {
         private int _studentID;
@@ -39,6 +38,11 @@ namespace ProjectV1
             _emergencyNum = emergencyNum;
             _parent1Name = parent1Name;
             _parent2Name = parent2Name;
+        }
+
+        public int getStudentId()
+        {
+            return _studentID;
         }
     }
 }

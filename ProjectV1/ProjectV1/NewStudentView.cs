@@ -20,8 +20,8 @@ namespace ProjectV1
             InitializeComponent();
         }
 
-        public void addInfo(string fName, string lName, string cell, string dob, string fatherName, string motherName,
-            string emergCell, string address, string postal)
+        public void addInfo(string fName, string lName, string dob, string cell, string address, string postal, 
+            string emergCell, string fatherName, string motherName)
         {
             try
             {
@@ -34,8 +34,8 @@ namespace ProjectV1
                 string day = " " + splitDOB[2];
                 using (System.IO.StreamWriter streamWriter = new System.IO.StreamWriter(@filepath, true))
                 {
-                    streamWriter.WriteLine(student.getStudentId()+ "," + fName + "," + lName + "," + cell + ","  + year+month+day + "," +
-                        fatherName + ","+ motherName + ","+ emergCell + "," + address + "," + postal);
+                    streamWriter.WriteLine(student.getStudentId()+ "," + fName + "," + lName + ","  + year+month+day + "," 
+                        +cell + "," + address + "," + postal + "," + emergCell + "," + fatherName + "," + motherName);
                 }
             }
             catch (Exception ex)
@@ -49,8 +49,8 @@ namespace ProjectV1
         {
             try
             {
-                addInfo(studentFirstNameTb.Text, studentLastNameTb.Text, studentCellTb.Text, dobTb.Text,
-                 fatherFirstNameTb.Text, motherFirstNameTb.Text, parentCellTb.Text, addressTb.Text, postalCodeTb.Text);
+                addInfo(studentFirstNameTb.Text, studentLastNameTb.Text, dobTb.Text, studentCellTb.Text,
+                 addressTb.Text, postalCodeTb.Text, parentCellTb.Text, fatherFirstNameTb.Text, motherFirstNameTb.Text);
             }
             catch (Exception exs)
             {
