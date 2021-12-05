@@ -43,13 +43,11 @@
 ### General
 
 - [ ] Design Database
-- [ ] Student Class
-- [ ] Admin Class
-- [ ] Implement Login Screen
-  - [ ] Admin Creation
-- [ ] Implement Dashboard View (Main Menu)
-  - [ ] Make link to New Student View
-  - [ ] Make link to Database View
+- [x] Student Class
+- [x] Implement Login Screen
+- [x] Implement Dashboard View (Main Menu)
+  - [x] Make link to New Student View
+  - [x] Make link to Database View
 - [ ] Clean GUI
 - [ ] Add Theme
 
@@ -60,20 +58,16 @@
 - [ ] Specific Cases(Number/Symbols)
 - [ ] Implement New Student View (`Sarah`)
   - [ ] Input Fields
-    - [ ] First Name / Last Name
-    - [ ] Parents' contact info
-    - [ ] Siblings in School (Optional)
-    - [ ] Address
-      - [ ] Number
-      - [ ] Street Name
-      - [ ] App/Suite/Other (Optional)
-      - [ ] Postal Code
-      - [ ] City
-      - [ ] Country
-      - [ ] Phone Number
-    - [ ] Return Button
-    - [ ] Save Button
+    - [x] First Name / Last Name
+    - [x] Date Of Birth
+    - [x] Phone Number
+    - [x] Address
+    - [x] Postal Code
+    - [x] City
+    - [x] Parents' Name
+    - [x] Save Button
     - [ ] Preview File
+  - [ ] CSV Conversion
 - [ ] Implement Database View (`Andy`)
   - [ ] Add database reading
     - [ ] Add column with values
@@ -85,7 +79,6 @@
   - [ ] Update Info Function
   - [ ] Next/Previous Button
   - [ ] Return Button
-  - [ ] Add grades
   - [ ] Delete Function
 
 ## Database
