@@ -58,34 +58,24 @@ namespace ProjectV1
                 {
                     throw new Exception();
                 }
+                MessageBox.Show($"{studentFirstNameTb.Text} was added to the system", "Complete", MessageBoxButtons.OK,
+                MessageBoxIcon.Information);
+                studentFirstNameTb.Clear();
+                studentLastNameTb.Clear();
+                studentCellTb.Clear();
+                fatherFirstNameTb.Clear();
+                motherFirstNameTb.Clear();
+                dobTb.Clear();
+                parentCellTb.Clear();
+                addressTb.Clear();
+                postalCodeTb.Clear();
             }
             catch (Exception exs)
             {
                 MessageBox.Show("All boxes must be filled out. Make sure you entered all of the student's info",
                     "Not everything is filled", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            /*catch (Exception exs)
-            {
-                throw new ApplicationException("Something went wrong :", exs);
-            }*/
-            /*if (studentFirstNameTb.Text == null || studentLastNameTb.Text == null || dobTb.Text== null ||
-                studentCellTb.Text == null || addressTb.Text == null || postalCodeTb.Text == null || parentCellTb.Text == null ||
-                fatherFirstNameTb.Text == null || motherFirstNameTb.Text == null)
-            {
-                MessageBox.Show("All boxes must be filled out. Make sure you entered all of the student's info",
-                    "Not everything is filled",  MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }*/
-            MessageBox.Show($"{studentFirstNameTb.Text} was added to the system","Complete", MessageBoxButtons.OK, 
-                MessageBoxIcon.Information);
-            studentFirstNameTb.Clear();
-            studentLastNameTb.Clear();
-            studentCellTb.Clear();
-            fatherFirstNameTb.Clear();
-            motherFirstNameTb.Clear();
-            dobTb.Clear();
-            parentCellTb.Clear();
-            addressTb.Clear();
-            postalCodeTb.Clear();
+            
         }
 
         private void previewButton_Click(object sender, EventArgs e)
