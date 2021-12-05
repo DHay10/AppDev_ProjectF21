@@ -75,7 +75,8 @@ namespace ProjectV1
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(976, 14);
+            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button2.Location = new System.Drawing.Point(605, 12);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 3;
@@ -84,26 +85,31 @@ namespace ProjectV1
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(857, 17);
+            this.textBox1.Location = new System.Drawing.Point(94, 13);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(100, 20);
             this.textBox1.TabIndex = 4;
             // 
             // studentTableDGV
             // 
+            this.studentTableDGV.AllowUserToAddRows = false;
             this.studentTableDGV.AllowUserToDeleteRows = false;
+            this.studentTableDGV.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.studentTableDGV.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.studentTableDGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.studentTableDGV.Location = new System.Drawing.Point(13, 42);
             this.studentTableDGV.Name = "studentTableDGV";
             this.studentTableDGV.ReadOnly = true;
-            this.studentTableDGV.Size = new System.Drawing.Size(1038, 423);
+            this.studentTableDGV.Size = new System.Drawing.Size(667, 423);
             this.studentTableDGV.TabIndex = 5;
+            this.studentTableDGV.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.studentTableDGV_CellContentDoubleClick);
             // 
             // DatabaseView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1063, 477);
+            this.ClientSize = new System.Drawing.Size(692, 477);
             this.Controls.Add(this.studentTableDGV);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.button2);

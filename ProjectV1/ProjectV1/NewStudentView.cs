@@ -34,7 +34,7 @@ namespace ProjectV1
                 string day = " " + splitDOB[2];
                 using (System.IO.StreamWriter streamWriter = new System.IO.StreamWriter(@filepath, true))
                 {
-                    streamWriter.WriteLine(student.getStudentId()+ "," + fName + "," + lName + ","  + year+month+day + "," 
+                    streamWriter.WriteLine(student.StudentID + "," + fName + "," + lName + ","  + year+month+day + "," 
                         +cell + "," + address + "," + postal + "," + emergCell + "," + fatherName + "," + motherName);
                 }
             }
