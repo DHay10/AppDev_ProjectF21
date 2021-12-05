@@ -72,7 +72,7 @@ namespace ProjectV1
             }
             catch (Exception exs)
             {
-                MessageBox.Show("All boxes must be filled out. Make sure you entered all of the student's info",
+                MessageBox.Show("All boxes must be filled out. Make sure you entered all of the student's info \n"+ exs,
                     "Not everything is filled", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             
