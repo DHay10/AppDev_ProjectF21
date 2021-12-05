@@ -8,18 +8,37 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
+using System.Text.RegularExpressions;
 
 namespace ProjectV1
 {
     public partial class NewStudentView : Form
     {
         string filepath = "studentCSV.txt"; //filepath to the csv file
-
         public NewStudentView()
         {
             InitializeComponent();
         }
 
+        //metohd to make sure phone number is written correctly
+        public void validatePhone()
+        {
+            try
+            {
+                Regex regEx = new Regex(@"^\(\d{ 3}\)\d{ 7}$");
+                string phone = studentCellTb.Text;
+
+                if (!regEx.IsMatch(phone))
+                {
+                    throw new Exception();
+                }
+            }catch(Exception ex)
+            {
+                MessageBox.Show("Phone number is not valid. Needs to be in the format of (XXX)XXXXXXX" + ex, "Invalid phone number",
+                    MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            
+        }
         // method to add all the info into the csv file
         public void addInfo(string fName, string lName, string dob, string cell, string address, string postal, 
             string emergCell, string fatherName, string motherName)
@@ -51,10 +70,6 @@ namespace ProjectV1
         {
             try
             {
-                //using add info methof
-                addInfo(studentFirstNameTb.Text, studentLastNameTb.Text, dobTb.Text, studentCellTb.Text,
-                 addressTb.Text, postalCodeTb.Text, parentCellTb.Text, fatherFirstNameTb.Text, motherFirstNameTb.Text);
-
                 //if anything is null, throw exception
                 if (studentFirstNameTb.Text == null || studentLastNameTb.Text == null || dobTb.Text == null ||
                 studentCellTb.Text == null || addressTb.Text == null || postalCodeTb.Text == null || parentCellTb.Text == null ||
@@ -62,7 +77,11 @@ namespace ProjectV1
                 {
                     throw new Exception();
                 }
-                //if nothing is null it continues
+                validatePhone();
+                //using add info method
+                addInfo(studentFirstNameTb.Text, studentLastNameTb.Text, dobTb.Text, studentCellTb.Text,
+                 addressTb.Text, postalCodeTb.Text, parentCellTb.Text, fatherFirstNameTb.Text, motherFirstNameTb.Text);
+
                 MessageBox.Show($"{studentFirstNameTb.Text} was added to the system", "Complete", MessageBoxButtons.OK,
                     MessageBoxIcon.Information);
                 //clear all boxes so user can enter another student if desired

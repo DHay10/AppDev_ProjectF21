@@ -71,13 +71,15 @@ namespace ProjectV1
             this.dobLabel = new System.Windows.Forms.Label();
             this.previewCell = new System.Windows.Forms.Label();
             this.previewDob = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(12, 18);
+            this.label1.Location = new System.Drawing.Point(30, 20);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(164, 20);
             this.label1.TabIndex = 0;
@@ -315,7 +317,7 @@ namespace ProjectV1
             // 
             // previewLabel
             // 
-            this.previewLabel.BackColor = System.Drawing.Color.Red;
+            this.previewLabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.previewLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.previewLabel.ForeColor = System.Drawing.Color.White;
             this.previewLabel.Location = new System.Drawing.Point(447, 72);
@@ -464,12 +466,22 @@ namespace ProjectV1
             this.previewDob.Size = new System.Drawing.Size(0, 13);
             this.previewDob.TabIndex = 46;
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.Red;
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Location = new System.Drawing.Point(1, -1);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(733, 57);
+            this.panel1.TabIndex = 47;
+            // 
             // NewStudentView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Red;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(735, 430);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.previewDob);
             this.Controls.Add(this.previewCell);
             this.Controls.Add(this.dobLabel);
@@ -511,11 +523,12 @@ namespace ProjectV1
             this.Controls.Add(this.studentFirstNameTb);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
             this.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "NewStudentView";
             this.Text = "NewStudentView";
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -565,5 +578,6 @@ namespace ProjectV1
         private System.Windows.Forms.Label dobLabel;
         private System.Windows.Forms.Label previewCell;
         private System.Windows.Forms.Label previewDob;
+        private System.Windows.Forms.Panel panel1;
     }
 }
