@@ -20,25 +20,6 @@ namespace ProjectV1
             InitializeComponent();
         }
 
-        //metohd to make sure phone number is written correctly
-        public void validatePhone()
-        {
-            try
-            {
-                Regex regEx = new Regex(@"^\(\d{ 3}\)\d{ 7}$");
-                string phone = studentCellTb.Text;
-
-                if (!regEx.IsMatch(phone))
-                {
-                    throw new Exception();
-                }
-            }catch(Exception ex)
-            {
-                MessageBox.Show("Phone number is not valid. Needs to be in the format of (XXX)XXXXXXX" + ex, "Invalid phone number",
-                    MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            }
-            
-        }
         // method to add all the info into the csv file
         public void addInfo(string fName, string lName, string dob, string cell, string address, string postal, 
             string emergCell, string fatherName, string motherName)
@@ -70,20 +51,28 @@ namespace ProjectV1
         {
             try
             {
+                Regex regEx = new Regex(@"^\([0-9]{3}\)[0-9]{3}\-[0-9]{4}$");
+
+                if (regEx.IsMatch(studentCellTb.Text) == false || regEx.IsMatch(parentCellTb.Text) == false)
+                {
+                    throw new InvalidOperationException();
+                }
+
                 //if anything is null, throw exception
                 if (studentFirstNameTb.Text == null || studentLastNameTb.Text == null || dobTb.Text == null ||
                 studentCellTb.Text == null || addressTb.Text == null || postalCodeTb.Text == null || parentCellTb.Text == null ||
                 fatherFirstNameTb.Text == null || motherFirstNameTb.Text == null)
                 {
-                    throw new Exception();
+                    throw new ArgumentNullException();
                 }
-                validatePhone();
+
                 //using add info method
                 addInfo(studentFirstNameTb.Text, studentLastNameTb.Text, dobTb.Text, studentCellTb.Text,
                  addressTb.Text, postalCodeTb.Text, parentCellTb.Text, fatherFirstNameTb.Text, motherFirstNameTb.Text);
 
                 MessageBox.Show($"{studentFirstNameTb.Text} was added to the system", "Complete", MessageBoxButtons.OK,
                     MessageBoxIcon.Information);
+
                 //clear all boxes so user can enter another student if desired
                 studentFirstNameTb.Clear();
                 studentLastNameTb.Clear();
@@ -95,10 +84,15 @@ namespace ProjectV1
                 addressTb.Clear();
                 postalCodeTb.Clear();
             }
-            catch (Exception exs)
+            catch (ArgumentNullException exs)
             {
                 MessageBox.Show("All boxes must be filled out. Make sure you entered all of the student's info \n"+ exs,
                     "Not everything is filled", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            catch(InvalidOperationException ex)
+            {
+                MessageBox.Show("Must enter a valid phone number. Format for phone is (XXX)XXX-XXXX \n" + ex,
+                    "Must enter proper phone number", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             
         }

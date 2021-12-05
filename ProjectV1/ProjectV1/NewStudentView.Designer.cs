@@ -171,9 +171,9 @@ namespace ProjectV1
             this.label9.AutoSize = true;
             this.label9.Location = new System.Drawing.Point(9, 270);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(83, 13);
+            this.label9.Size = new System.Drawing.Size(162, 13);
             this.label9.TabIndex = 16;
-            this.label9.Text = "Emergency Cell:";
+            this.label9.Text = "Emergency Cell(XXX)XXX-XXXX:";
             // 
             // label10
             // 
@@ -196,9 +196,9 @@ namespace ProjectV1
             this.label11.AutoSize = true;
             this.label11.Location = new System.Drawing.Point(9, 102);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(57, 13);
+            this.label11.Size = new System.Drawing.Size(139, 13);
             this.label11.TabIndex = 19;
-            this.label11.Text = "Cellphone:";
+            this.label11.Text = "Cellphone (XXX)XXX-XXXX:";
             // 
             // studentCellTb
             // 
@@ -317,7 +317,7 @@ namespace ProjectV1
             // 
             // previewLabel
             // 
-            this.previewLabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.previewLabel.BackColor = System.Drawing.SystemColors.WindowFrame;
             this.previewLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.previewLabel.ForeColor = System.Drawing.Color.White;
             this.previewLabel.Location = new System.Drawing.Point(447, 72);
@@ -479,7 +479,7 @@ namespace ProjectV1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.BackColor = System.Drawing.SystemColors.WindowFrame;
             this.ClientSize = new System.Drawing.Size(735, 430);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.previewDob);
