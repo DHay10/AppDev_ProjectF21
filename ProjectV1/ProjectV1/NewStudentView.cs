@@ -51,12 +51,32 @@ namespace ProjectV1
             {
                 addInfo(studentFirstNameTb.Text, studentLastNameTb.Text, dobTb.Text, studentCellTb.Text,
                  addressTb.Text, postalCodeTb.Text, parentCellTb.Text, fatherFirstNameTb.Text, motherFirstNameTb.Text);
+
+                if (studentFirstNameTb.Text == null || studentLastNameTb.Text == null || dobTb.Text == null ||
+                studentCellTb.Text == null || addressTb.Text == null || postalCodeTb.Text == null || parentCellTb.Text == null ||
+                fatherFirstNameTb.Text == null || motherFirstNameTb.Text == null)
+                {
+                    throw new Exception();
+                }
             }
             catch (Exception exs)
             {
-                throw new ApplicationException("Something went wrong :", exs);
+                MessageBox.Show("All boxes must be filled out. Make sure you entered all of the student's info",
+                    "Not everything is filled", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            MessageBox.Show($"{studentFirstNameTb.Text} was added to the system","Complete", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            /*catch (Exception exs)
+            {
+                throw new ApplicationException("Something went wrong :", exs);
+            }*/
+            /*if (studentFirstNameTb.Text == null || studentLastNameTb.Text == null || dobTb.Text== null ||
+                studentCellTb.Text == null || addressTb.Text == null || postalCodeTb.Text == null || parentCellTb.Text == null ||
+                fatherFirstNameTb.Text == null || motherFirstNameTb.Text == null)
+            {
+                MessageBox.Show("All boxes must be filled out. Make sure you entered all of the student's info",
+                    "Not everything is filled",  MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }*/
+            MessageBox.Show($"{studentFirstNameTb.Text} was added to the system","Complete", MessageBoxButtons.OK, 
+                MessageBoxIcon.Information);
             studentFirstNameTb.Clear();
             studentLastNameTb.Clear();
             studentCellTb.Clear();
