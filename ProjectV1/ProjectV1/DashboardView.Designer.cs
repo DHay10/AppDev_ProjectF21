@@ -47,7 +47,7 @@ namespace ProjectV1
             // 
             // addNewStudentButton
             // 
-            this.addNewStudentButton.Location = new System.Drawing.Point(34, 178);
+            this.addNewStudentButton.Location = new System.Drawing.Point(43, 180);
             this.addNewStudentButton.Name = "addNewStudentButton";
             this.addNewStudentButton.Size = new System.Drawing.Size(150, 97);
             this.addNewStudentButton.TabIndex = 0;
@@ -60,17 +60,16 @@ namespace ProjectV1
             this.panel1.BackColor = System.Drawing.Color.DimGray;
             this.panel1.Controls.Add(this.studentdbB);
             this.panel1.Controls.Add(this.Vlogo);
-            this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.addNewStudentButton);
             this.panel1.Location = new System.Drawing.Point(-1, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(222, 523);
+            this.panel1.Size = new System.Drawing.Size(222, 528);
             this.panel1.TabIndex = 2;
             // 
             // studentdbB
             // 
-            this.studentdbB.Location = new System.Drawing.Point(34, 295);
+            this.studentdbB.Location = new System.Drawing.Point(43, 292);
             this.studentdbB.Name = "studentdbB";
             this.studentdbB.Size = new System.Drawing.Size(150, 99);
             this.studentdbB.TabIndex = 7;
@@ -82,7 +81,7 @@ namespace ProjectV1
             // 
             this.label1.Font = new System.Drawing.Font("Fingerpop", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(3, 19);
+            this.label1.Location = new System.Drawing.Point(233, 10);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(665, 90);
             this.label1.TabIndex = 6;
@@ -94,7 +93,7 @@ namespace ProjectV1
             // 
             this.Vlogo.Font = new System.Drawing.Font("Broadway", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Vlogo.ForeColor = System.Drawing.SystemColors.Window;
-            this.Vlogo.Location = new System.Drawing.Point(50, 406);
+            this.Vlogo.Location = new System.Drawing.Point(62, 394);
             this.Vlogo.Name = "Vlogo";
             this.Vlogo.Size = new System.Drawing.Size(120, 106);
             this.Vlogo.TabIndex = 5;
@@ -102,13 +101,12 @@ namespace ProjectV1
             // 
             // pictureBox2
             // 
-            this.pictureBox2.BackColor = System.Drawing.Color.Red;
-            this.pictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(-2, 0);
+            this.pictureBox2.Location = new System.Drawing.Point(22, 10);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(222, 133);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox2.Size = new System.Drawing.Size(200, 108);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 4;
             this.pictureBox2.TabStop = false;
             // 
@@ -124,9 +122,10 @@ namespace ProjectV1
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel3.Controls.Add(this.label1);
-            this.panel3.Location = new System.Drawing.Point(221, 0);
+            this.panel3.Controls.Add(this.pictureBox2);
+            this.panel3.Location = new System.Drawing.Point(-12, 0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(671, 133);
+            this.panel3.Size = new System.Drawing.Size(913, 135);
             this.panel3.TabIndex = 3;
             // 
             // pictureBox1
