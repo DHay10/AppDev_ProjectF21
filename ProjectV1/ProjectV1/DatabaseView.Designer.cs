@@ -77,6 +77,7 @@ namespace ProjectV1
             // 
             // refreshB
             // 
+            this.refreshB.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.refreshB.Location = new System.Drawing.Point(13, 13);
             this.refreshB.Name = "refreshB";
             this.refreshB.Size = new System.Drawing.Size(75, 23);
@@ -118,6 +119,7 @@ namespace ProjectV1
             this.infoPreviewP.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.infoPreviewP.BackColor = System.Drawing.SystemColors.WindowFrame;
             this.infoPreviewP.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.infoPreviewP.Controls.Add(this.deleteB);
             this.infoPreviewP.Controls.Add(this.nextB);
@@ -144,6 +146,7 @@ namespace ProjectV1
             this.infoPreviewP.Controls.Add(this.lNameL);
             this.infoPreviewP.Controls.Add(this.fNameL);
             this.infoPreviewP.Controls.Add(this.titlePreviewL);
+            this.infoPreviewP.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.infoPreviewP.Location = new System.Drawing.Point(687, 12);
             this.infoPreviewP.Name = "infoPreviewP";
             this.infoPreviewP.Size = new System.Drawing.Size(545, 437);
@@ -151,6 +154,7 @@ namespace ProjectV1
             // 
             // deleteB
             // 
+            this.deleteB.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.deleteB.Location = new System.Drawing.Point(286, 409);
             this.deleteB.Name = "deleteB";
             this.deleteB.Size = new System.Drawing.Size(75, 23);
@@ -162,6 +166,7 @@ namespace ProjectV1
             // nextB
             // 
             this.nextB.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.nextB.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.nextB.Location = new System.Drawing.Point(85, 408);
             this.nextB.Name = "nextB";
             this.nextB.Size = new System.Drawing.Size(75, 23);
@@ -173,6 +178,7 @@ namespace ProjectV1
             // prevB
             // 
             this.prevB.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.prevB.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.prevB.Location = new System.Drawing.Point(4, 408);
             this.prevB.Name = "prevB";
             this.prevB.Size = new System.Drawing.Size(75, 23);
@@ -184,6 +190,7 @@ namespace ProjectV1
             // updateB
             // 
             this.updateB.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.updateB.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.updateB.Location = new System.Drawing.Point(465, 409);
             this.updateB.Name = "updateB";
             this.updateB.Size = new System.Drawing.Size(75, 23);
@@ -435,12 +442,14 @@ namespace ProjectV1
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
+            this.BackColor = System.Drawing.Color.Red;
             this.ClientSize = new System.Drawing.Size(1244, 461);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.infoPreviewP);
             this.Controls.Add(this.studentTableDGV);
             this.Controls.Add(this.searchTB);
             this.Controls.Add(this.refreshB);
+            this.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.MaximumSize = new System.Drawing.Size(1260, 500);
             this.MinimumSize = new System.Drawing.Size(1260, 500);
             this.Name = "DatabaseView";
