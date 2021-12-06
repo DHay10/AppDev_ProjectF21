@@ -65,10 +65,12 @@ namespace ProjectV1
             this.lNameFilterRB = new System.Windows.Forms.RadioButton();
             this.phoneNumFilterRB = new System.Windows.Forms.RadioButton();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.panel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.studentBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.studentTableDGV)).BeginInit();
             this.infoPreviewP.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // studentBindingSource
@@ -88,9 +90,9 @@ namespace ProjectV1
             // 
             // searchTB
             // 
-            this.searchTB.Location = new System.Drawing.Point(460, 15);
+            this.searchTB.Location = new System.Drawing.Point(485, 15);
             this.searchTB.Name = "searchTB";
-            this.searchTB.Size = new System.Drawing.Size(220, 20);
+            this.searchTB.Size = new System.Drawing.Size(195, 20);
             this.searchTB.TabIndex = 4;
             this.searchTB.TextChanged += new System.EventHandler(this.searchTB_TextChanged);
             // 
@@ -99,16 +101,17 @@ namespace ProjectV1
             this.studentTableDGV.AllowUserToAddRows = false;
             this.studentTableDGV.AllowUserToDeleteRows = false;
             this.studentTableDGV.AllowUserToResizeRows = false;
-            this.studentTableDGV.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
+            this.studentTableDGV.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.studentTableDGV.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.studentTableDGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.studentTableDGV.Location = new System.Drawing.Point(13, 42);
+            this.studentTableDGV.Location = new System.Drawing.Point(16, 12);
             this.studentTableDGV.MultiSelect = false;
             this.studentTableDGV.Name = "studentTableDGV";
             this.studentTableDGV.ReadOnly = true;
             this.studentTableDGV.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.studentTableDGV.Size = new System.Drawing.Size(667, 407);
+            this.studentTableDGV.Size = new System.Drawing.Size(635, 379);
             this.studentTableDGV.TabIndex = 5;
             this.studentTableDGV.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.studentTableDGV_CellContentDoubleClick);
             this.studentTableDGV.RowHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.studentTableDGV_RowHeaderMouseClick);
@@ -386,9 +389,10 @@ namespace ProjectV1
             // 
             this.studentIDFilterRB.AutoSize = true;
             this.studentIDFilterRB.Checked = true;
-            this.studentIDFilterRB.Location = new System.Drawing.Point(16, 82);
+            this.studentIDFilterRB.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.studentIDFilterRB.Location = new System.Drawing.Point(7, 82);
             this.studentIDFilterRB.Name = "studentIDFilterRB";
-            this.studentIDFilterRB.Size = new System.Drawing.Size(73, 17);
+            this.studentIDFilterRB.Size = new System.Drawing.Size(82, 17);
             this.studentIDFilterRB.TabIndex = 7;
             this.studentIDFilterRB.TabStop = true;
             this.studentIDFilterRB.Text = "StudentID";
@@ -397,9 +401,10 @@ namespace ProjectV1
             // fNameFilterRB
             // 
             this.fNameFilterRB.AutoSize = true;
+            this.fNameFilterRB.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fNameFilterRB.Location = new System.Drawing.Point(95, 82);
             this.fNameFilterRB.Name = "fNameFilterRB";
-            this.fNameFilterRB.Size = new System.Drawing.Size(75, 17);
+            this.fNameFilterRB.Size = new System.Drawing.Size(85, 17);
             this.fNameFilterRB.TabIndex = 8;
             this.fNameFilterRB.Text = "First Name";
             this.fNameFilterRB.UseVisualStyleBackColor = true;
@@ -407,9 +412,10 @@ namespace ProjectV1
             // lNameFilterRB
             // 
             this.lNameFilterRB.AutoSize = true;
-            this.lNameFilterRB.Location = new System.Drawing.Point(176, 82);
+            this.lNameFilterRB.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lNameFilterRB.Location = new System.Drawing.Point(186, 82);
             this.lNameFilterRB.Name = "lNameFilterRB";
-            this.lNameFilterRB.Size = new System.Drawing.Size(76, 17);
+            this.lNameFilterRB.Size = new System.Drawing.Size(85, 17);
             this.lNameFilterRB.TabIndex = 9;
             this.lNameFilterRB.Text = "Last Name";
             this.lNameFilterRB.UseVisualStyleBackColor = true;
@@ -417,9 +423,10 @@ namespace ProjectV1
             // phoneNumFilterRB
             // 
             this.phoneNumFilterRB.AutoSize = true;
-            this.phoneNumFilterRB.Location = new System.Drawing.Point(258, 82);
+            this.phoneNumFilterRB.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.phoneNumFilterRB.Location = new System.Drawing.Point(277, 82);
             this.phoneNumFilterRB.Name = "phoneNumFilterRB";
-            this.phoneNumFilterRB.Size = new System.Drawing.Size(96, 17);
+            this.phoneNumFilterRB.Size = new System.Drawing.Size(108, 17);
             this.phoneNumFilterRB.TabIndex = 10;
             this.phoneNumFilterRB.Text = "Phone Number";
             this.phoneNumFilterRB.UseVisualStyleBackColor = true;
@@ -432,10 +439,20 @@ namespace ProjectV1
             this.groupBox1.Controls.Add(this.lNameFilterRB);
             this.groupBox1.Location = new System.Drawing.Point(94, -66);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(360, 102);
+            this.groupBox1.Size = new System.Drawing.Size(385, 102);
             this.groupBox1.TabIndex = 11;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "groupBox1";
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.DimGray;
+            this.panel1.Controls.Add(this.studentTableDGV);
+            this.panel1.ForeColor = System.Drawing.Color.Black;
+            this.panel1.Location = new System.Drawing.Point(13, 42);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(667, 407);
+            this.panel1.TabIndex = 12;
             // 
             // DatabaseView
             // 
@@ -444,16 +461,16 @@ namespace ProjectV1
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.Red;
             this.ClientSize = new System.Drawing.Size(1244, 461);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.infoPreviewP);
-            this.Controls.Add(this.studentTableDGV);
             this.Controls.Add(this.searchTB);
             this.Controls.Add(this.refreshB);
-            this.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.ForeColor = System.Drawing.Color.White;
             this.MaximumSize = new System.Drawing.Size(1260, 500);
             this.MinimumSize = new System.Drawing.Size(1260, 500);
             this.Name = "DatabaseView";
-            this.Text = "DatabaseForm";
+            this.Text = "Vanier SISD - Database View";
             this.Load += new System.EventHandler(this.DatabaseView_Load);
             ((System.ComponentModel.ISupportInitialize)(this.studentBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.studentTableDGV)).EndInit();
@@ -461,6 +478,7 @@ namespace ProjectV1
             this.infoPreviewP.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -502,5 +520,6 @@ namespace ProjectV1
         private System.Windows.Forms.RadioButton phoneNumFilterRB;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button deleteB;
+        private System.Windows.Forms.Panel panel1;
     }
 }

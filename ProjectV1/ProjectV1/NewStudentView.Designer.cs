@@ -528,7 +528,7 @@ namespace ProjectV1
             this.MaximumSize = new System.Drawing.Size(751, 469);
             this.MinimumSize = new System.Drawing.Size(751, 469);
             this.Name = "NewStudentView";
-            this.Text = "NewStudentView";
+            this.Text = "Vanier SISD - Adding New Student";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);

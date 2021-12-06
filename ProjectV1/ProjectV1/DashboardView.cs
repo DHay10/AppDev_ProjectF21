@@ -28,6 +28,11 @@ namespace ProjectV1
             DatabaseView viewDB = new DatabaseView();
             viewDB.ShowDialog();
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 
 
