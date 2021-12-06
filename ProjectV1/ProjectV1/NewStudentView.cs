@@ -42,7 +42,9 @@ namespace ProjectV1
             //if something goes wrong it gets caught here
             catch (Exception ex)
             {
-                throw new ApplicationException("Something went wrong :", ex);
+                MessageBox.Show("The format of the DATE OF BIRTH is not correct\n" + ex,
+                    "Format is wrong", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
             }
         }
 
@@ -54,7 +56,7 @@ namespace ProjectV1
                 //if first name,last name AND phone number are the same,throw excpetion
                 foreach (Student s in DBSystem.Students)
                 {
-                    if (studentFirstNameTb.Text == s.FName || studentLastNameTb.Text == s.LName || 
+                    if (studentFirstNameTb.Text == s.FName && studentLastNameTb.Text == s.LName && 
                         studentCellTb.Text == s.PhoneNum)
                     {
                         throw new ArgumentException();
@@ -74,6 +76,11 @@ namespace ProjectV1
                 fatherFirstNameTb.Text == null || motherFirstNameTb.Text == null)
                 {
                     throw new ArgumentNullException();
+                }
+                DateTime a;
+                if (!DateTime.TryParse(dobTb.Text, out a))
+                {
+                    throw new InvalidOperationException();
                 }
 
                 //using add info method
@@ -101,8 +108,8 @@ namespace ProjectV1
             }
             catch(InvalidOperationException ex)
             {
-                MessageBox.Show("Must enter a valid phone number. Format for phone is (XXX)XXX-XXXX \n" + ex,
-                    "Must enter proper phone number", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Must enter a valid phone number and date of birth.\n Format for phone is (XXX)XXX-XXXX and format for date of birth YYYY-MM-DD\n" + ex,
+                    "Must enter proper phone number and date of birth", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             catch(ArgumentException ex)
             {

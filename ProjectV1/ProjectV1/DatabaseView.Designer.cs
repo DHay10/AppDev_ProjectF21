@@ -36,6 +36,7 @@ namespace ProjectV1
             this.searchTB = new System.Windows.Forms.TextBox();
             this.studentTableDGV = new System.Windows.Forms.DataGridView();
             this.infoPreviewP = new System.Windows.Forms.Panel();
+            this.deleteB = new System.Windows.Forms.Button();
             this.nextB = new System.Windows.Forms.Button();
             this.prevB = new System.Windows.Forms.Button();
             this.updateB = new System.Windows.Forms.Button();
@@ -93,6 +94,7 @@ namespace ProjectV1
             this.searchB.TabIndex = 3;
             this.searchB.Text = "Search";
             this.searchB.UseVisualStyleBackColor = true;
+            this.searchB.Click += new System.EventHandler(this.searchB_Click);
             // 
             // searchTB
             // 
@@ -100,6 +102,7 @@ namespace ProjectV1
             this.searchTB.Name = "searchTB";
             this.searchTB.Size = new System.Drawing.Size(139, 20);
             this.searchTB.TabIndex = 4;
+            this.searchTB.TextChanged += new System.EventHandler(this.searchTB_TextChanged);
             // 
             // studentTableDGV
             // 
@@ -127,6 +130,7 @@ namespace ProjectV1
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.infoPreviewP.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.infoPreviewP.Controls.Add(this.deleteB);
             this.infoPreviewP.Controls.Add(this.nextB);
             this.infoPreviewP.Controls.Add(this.prevB);
             this.infoPreviewP.Controls.Add(this.updateB);
@@ -155,6 +159,16 @@ namespace ProjectV1
             this.infoPreviewP.Name = "infoPreviewP";
             this.infoPreviewP.Size = new System.Drawing.Size(545, 437);
             this.infoPreviewP.TabIndex = 6;
+            // 
+            // deleteB
+            // 
+            this.deleteB.Location = new System.Drawing.Point(286, 409);
+            this.deleteB.Name = "deleteB";
+            this.deleteB.Size = new System.Drawing.Size(75, 23);
+            this.deleteB.TabIndex = 24;
+            this.deleteB.Text = "Delete";
+            this.deleteB.UseVisualStyleBackColor = true;
+            this.deleteB.Click += new System.EventHandler(this.deleteB_Click);
             // 
             // nextB
             // 
@@ -391,7 +405,6 @@ namespace ProjectV1
             this.fNameFilterRB.Name = "fNameFilterRB";
             this.fNameFilterRB.Size = new System.Drawing.Size(75, 17);
             this.fNameFilterRB.TabIndex = 8;
-            this.fNameFilterRB.TabStop = true;
             this.fNameFilterRB.Text = "First Name";
             this.fNameFilterRB.UseVisualStyleBackColor = true;
             // 
@@ -402,7 +415,6 @@ namespace ProjectV1
             this.lNameFilterRB.Name = "lNameFilterRB";
             this.lNameFilterRB.Size = new System.Drawing.Size(76, 17);
             this.lNameFilterRB.TabIndex = 9;
-            this.lNameFilterRB.TabStop = true;
             this.lNameFilterRB.Text = "Last Name";
             this.lNameFilterRB.UseVisualStyleBackColor = true;
             // 
@@ -413,7 +425,6 @@ namespace ProjectV1
             this.phoneNumFilterRB.Name = "phoneNumFilterRB";
             this.phoneNumFilterRB.Size = new System.Drawing.Size(96, 17);
             this.phoneNumFilterRB.TabIndex = 10;
-            this.phoneNumFilterRB.TabStop = true;
             this.phoneNumFilterRB.Text = "Phone Number";
             this.phoneNumFilterRB.UseVisualStyleBackColor = true;
             // 
@@ -494,5 +505,6 @@ namespace ProjectV1
         private System.Windows.Forms.RadioButton lNameFilterRB;
         private System.Windows.Forms.RadioButton phoneNumFilterRB;
         private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Button deleteB;
     }
 }

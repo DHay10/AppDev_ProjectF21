@@ -1,4 +1,6 @@
-1,Sarah,Primavera,2003-02-16,(514)441-8014,2397 buttLane Street,W3G 6H7,514-449-2137,Michael,Caroline
-2,Andy-Tason,Nguyen-Chao,2003-07-16,(514)382-7919,8310 Avenue Christophe-Colomb,H2P 1X3,514-666-6969,Yong Chao,Ming Chao
-3,Hendrick,Armendariz-Reyes,2001-01-01,(514)420-6969,123 Vanier Street,H1E 2F3,514-382-7919,Test1,Test2
-4,Sarah,Primavera,2003-02-16,(514)441-8014,2222 Lane,H7K 4D3,(514)449-2371,mike,caro
+1,Sarah,Primavera,2003-02-16,(514)441-8014,2397 buttLane,W3G 6H7,514-449-2137,Michael,Caroline
+3,Andy-Tason,Nguyen-Chao,2003-07-16,(514)382-7919,8310 Avenue Christophe-Colomb,H2P 1X3,(514)420-8081,Papa,Mama
+4,test3,test,2001-01-01,(514)514-5145,test est test,test,(514)514-5145,testte,testes
+5,Hendrick,Armendariz-Reyes,2001-01-18,(321)321-1234,test,test,(321)321-1234,test test,test test
+6,test1,test,1999-01-05,(321)321-1234,test,testse,(321)321-1234,test,test
+2,test2,test2,2001-11-11,(514)222-2222,testest,testests,(514)222-2222,test,tests

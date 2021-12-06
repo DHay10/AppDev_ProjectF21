@@ -26,7 +26,7 @@ namespace ProjectV1
         public Student(string fName, string lName, DateTime dob, string phoneNum, string address, string postalCode, 
             string emergencyNum, string parent1Name, string parent2Name)
         {
-            _studentID = DBSystem.Students.Count + 1;
+            _studentID = checkAvailableID();
             _fName = fName;
             _lName = lName;
             _dob = dob;
@@ -38,24 +38,56 @@ namespace ProjectV1
             _parent2Name = parent2Name;
         }
 
+        public Student(int studentID, string fName, string lName, DateTime dob, string phoneNum, string address, 
+            string postalCode, string emergencyNum, string parent1Name, string parent2Name)
+        {
+            _studentID = studentID;
+            _fName = fName;
+            _lName = lName;
+            _dob = dob;
+            _phoneNum = phoneNum;
+            _address = address;
+            _postalCode = postalCode;
+            _emergencyNum = emergencyNum;
+            _parent1Name = parent1Name;
+            _parent2Name = parent2Name;
+        }
+
+        private static int checkAvailableID()
+        {
+            int id = 1;
+            foreach (Student s in DBSystem.Students)
+            {
+                if (id == s.StudentID)
+                {
+                    id++;
+                }
+            }
+            return id;
+        }
+
         public int StudentID
         {
             get => _studentID;
+            set => _studentID = value;
         }
 
         public string FName
         {
             get => _fName;
+            set => _fName = value;
         }
 
         public string LName
         {
             get => _lName;
+            set => _lName = value;
         }
 
         public DateTime Dob
         {
             get => _dob;
+            set => _dob = value;
         }
 
         public string PhoneNum

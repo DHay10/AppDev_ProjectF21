@@ -16,7 +16,7 @@ namespace ProjectV1
             foreach (string line in lines)
             {
                 string[] columns = line.Split(',');
-                _students.Add(new Student(columns[1], columns[2], DateTime.Parse(columns[3]), columns[4], columns[5], columns[6], columns[7], columns[8], columns[9]));
+                _students.Add(new Student(Int32.Parse(columns[0]), columns[1], columns[2], DateTime.Parse(columns[3]), columns[4], columns[5], columns[6], columns[7], columns[8], columns[9]));
             }
         }
 

@@ -39,6 +39,7 @@ namespace ProjectV1
             studentTableDGV.Columns["EmergencyNum"].Visible = false;
             studentTableDGV.Columns["Parent1Name"].Visible = false;
             studentTableDGV.Columns["Parent2Name"].Visible = false;
+            DataGridViewColumn columnToSort = studentTableDGV.Columns["StudentID"];
             studentTableDGV.Rows[0].Selected = true;
             rowIdx = studentTableDGV.SelectedRows[0].Index;
             Student currentStudent = (Student)studentTableDGV.Rows[rowIdx].DataBoundItem;
@@ -46,6 +47,11 @@ namespace ProjectV1
         }
 
         private void refreshB_Click(object sender, EventArgs e)
+        {
+            refreshView();
+        }
+
+        private void refreshView()
         {
             bs.Clear();
             foreach (Student s in DBSystem.Students)
@@ -141,6 +147,98 @@ namespace ProjectV1
             currentStudent.Parent2Name = sGuardianNameTB.Text;
             DBSystem.updateCSVFile();
             studentTableDGV.Refresh();
+        }
+
+        private void searchB_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void searchTB_TextChanged(object sender, EventArgs e)
+        {
+            CurrencyManager cM = (CurrencyManager)BindingContext[studentTableDGV.DataSource];
+            cM.SuspendBinding();
+            if (searchTB.Text == "")
+            {
+                foreach (DataGridViewRow row in studentTableDGV.Rows)
+                {
+                    row.Visible = true;
+                }
+                return;
+            }
+
+            foreach (DataGridViewRow row in studentTableDGV.Rows)
+            {
+                if (studentIDFilterRB.Checked)
+                {
+                    int a;
+                    if (!Int32.TryParse(searchTB.Text, out a))
+                    {
+                        MessageBox.Show("Please enter only numbers.");
+                        searchTB.Text = "";
+                        return;
+                    } 
+                    else
+                    {
+                        if (((Student)row.DataBoundItem).StudentID == Int32.Parse(searchTB.Text))
+                        {
+                            row.Visible = true;
+                        }
+                        else
+                        {
+                            row.Visible = false;
+                        }
+                    }
+                }
+
+                if (fNameFilterRB.Checked)
+                {
+                    if (((Student)row.DataBoundItem).FName.ToLower().Contains(searchTB.Text.ToLower()))
+                    {
+                        row.Visible = true;
+                    }
+                    else
+                    {
+                        row.Visible = false;
+                    }
+                }
+
+                if (lNameFilterRB.Checked)
+                {
+                    if (((Student)row.DataBoundItem).LName.ToLower().Contains(searchTB.Text.ToLower()))
+                    {
+                        row.Visible = true;
+                    }
+                    else
+                    {
+                        row.Visible = false;
+                    }
+                }
+
+                if (phoneNumFilterRB.Checked)
+                {
+                    if (((Student)row.DataBoundItem).PhoneNum.Contains(searchTB.Text))
+                    {
+                        row.Visible = true;
+                    }
+                    else
+                    {
+                        row.Visible = false;
+                    }
+                }
+                cM.ResumeBinding();
+            }
+        }
+
+        private void deleteB_Click(object sender, EventArgs e)
+        {
+            DBSystem.Students.Remove((Student)studentTableDGV.SelectedRows[0].DataBoundItem);
+            studentTableDGV.Rows[0].Selected = true;
+            rowIdx = studentTableDGV.SelectedRows[0].Index;
+            Student currentStudent = (Student)studentTableDGV.Rows[rowIdx].DataBoundItem;
+            displayFile(currentStudent);
+            refreshView();
+            DBSystem.updateCSVFile();
         }
     }
 }
