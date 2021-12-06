@@ -58,6 +58,8 @@ namespace ProjectV1
                     MessageBox.Show("Please enter a valid username and/or password", "Wrong username/password", MessageBoxButtons.OK,
                         MessageBoxIcon.Error);
                 }
+                e.Handled = true;
+                e.SuppressKeyPress = true;
             }
         }
     }

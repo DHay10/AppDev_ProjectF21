@@ -32,8 +32,8 @@ namespace ProjectV1
             this.components = new System.ComponentModel.Container();
             this.studentBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.refreshB = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.searchB = new System.Windows.Forms.Button();
+            this.searchTB = new System.Windows.Forms.TextBox();
             this.studentTableDGV = new System.Windows.Forms.DataGridView();
             this.infoPreviewP = new System.Windows.Forms.Panel();
             this.nextB = new System.Windows.Forms.Button();
@@ -60,9 +60,15 @@ namespace ProjectV1
             this.lNameL = new System.Windows.Forms.Label();
             this.fNameL = new System.Windows.Forms.Label();
             this.titlePreviewL = new System.Windows.Forms.Label();
+            this.studentIDFilterRB = new System.Windows.Forms.RadioButton();
+            this.fNameFilterRB = new System.Windows.Forms.RadioButton();
+            this.lNameFilterRB = new System.Windows.Forms.RadioButton();
+            this.phoneNumFilterRB = new System.Windows.Forms.RadioButton();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.studentBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.studentTableDGV)).BeginInit();
             this.infoPreviewP.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // studentBindingSource
@@ -79,21 +85,21 @@ namespace ProjectV1
             this.refreshB.UseVisualStyleBackColor = true;
             this.refreshB.Click += new System.EventHandler(this.refreshB_Click);
             // 
-            // button2
+            // searchB
             // 
-            this.button2.Location = new System.Drawing.Point(605, 12);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
+            this.searchB.Location = new System.Drawing.Point(605, 13);
+            this.searchB.Name = "searchB";
+            this.searchB.Size = new System.Drawing.Size(75, 23);
+            this.searchB.TabIndex = 3;
+            this.searchB.Text = "Search";
+            this.searchB.UseVisualStyleBackColor = true;
             // 
-            // textBox1
+            // searchTB
             // 
-            this.textBox1.Location = new System.Drawing.Point(94, 14);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 4;
+            this.searchTB.Location = new System.Drawing.Point(460, 15);
+            this.searchTB.Name = "searchTB";
+            this.searchTB.Size = new System.Drawing.Size(139, 20);
+            this.searchTB.TabIndex = 4;
             // 
             // studentTableDGV
             // 
@@ -108,6 +114,7 @@ namespace ProjectV1
             this.studentTableDGV.MultiSelect = false;
             this.studentTableDGV.Name = "studentTableDGV";
             this.studentTableDGV.ReadOnly = true;
+            this.studentTableDGV.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.studentTableDGV.Size = new System.Drawing.Size(667, 407);
             this.studentTableDGV.TabIndex = 5;
             this.studentTableDGV.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.studentTableDGV_CellContentDoubleClick);
@@ -365,16 +372,75 @@ namespace ProjectV1
             this.titlePreviewL.TabIndex = 0;
             this.titlePreviewL.Text = "Student File:";
             // 
+            // studentIDFilterRB
+            // 
+            this.studentIDFilterRB.AutoSize = true;
+            this.studentIDFilterRB.Checked = true;
+            this.studentIDFilterRB.Location = new System.Drawing.Point(16, 82);
+            this.studentIDFilterRB.Name = "studentIDFilterRB";
+            this.studentIDFilterRB.Size = new System.Drawing.Size(73, 17);
+            this.studentIDFilterRB.TabIndex = 7;
+            this.studentIDFilterRB.TabStop = true;
+            this.studentIDFilterRB.Text = "StudentID";
+            this.studentIDFilterRB.UseVisualStyleBackColor = true;
+            // 
+            // fNameFilterRB
+            // 
+            this.fNameFilterRB.AutoSize = true;
+            this.fNameFilterRB.Location = new System.Drawing.Point(95, 82);
+            this.fNameFilterRB.Name = "fNameFilterRB";
+            this.fNameFilterRB.Size = new System.Drawing.Size(75, 17);
+            this.fNameFilterRB.TabIndex = 8;
+            this.fNameFilterRB.TabStop = true;
+            this.fNameFilterRB.Text = "First Name";
+            this.fNameFilterRB.UseVisualStyleBackColor = true;
+            // 
+            // lNameFilterRB
+            // 
+            this.lNameFilterRB.AutoSize = true;
+            this.lNameFilterRB.Location = new System.Drawing.Point(176, 82);
+            this.lNameFilterRB.Name = "lNameFilterRB";
+            this.lNameFilterRB.Size = new System.Drawing.Size(76, 17);
+            this.lNameFilterRB.TabIndex = 9;
+            this.lNameFilterRB.TabStop = true;
+            this.lNameFilterRB.Text = "Last Name";
+            this.lNameFilterRB.UseVisualStyleBackColor = true;
+            // 
+            // phoneNumFilterRB
+            // 
+            this.phoneNumFilterRB.AutoSize = true;
+            this.phoneNumFilterRB.Location = new System.Drawing.Point(258, 82);
+            this.phoneNumFilterRB.Name = "phoneNumFilterRB";
+            this.phoneNumFilterRB.Size = new System.Drawing.Size(96, 17);
+            this.phoneNumFilterRB.TabIndex = 10;
+            this.phoneNumFilterRB.TabStop = true;
+            this.phoneNumFilterRB.Text = "Phone Number";
+            this.phoneNumFilterRB.UseVisualStyleBackColor = true;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.studentIDFilterRB);
+            this.groupBox1.Controls.Add(this.phoneNumFilterRB);
+            this.groupBox1.Controls.Add(this.fNameFilterRB);
+            this.groupBox1.Controls.Add(this.lNameFilterRB);
+            this.groupBox1.Location = new System.Drawing.Point(94, -66);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(360, 102);
+            this.groupBox1.TabIndex = 11;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "groupBox1";
+            // 
             // DatabaseView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(1244, 461);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.infoPreviewP);
             this.Controls.Add(this.studentTableDGV);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.searchTB);
+            this.Controls.Add(this.searchB);
             this.Controls.Add(this.refreshB);
             this.MaximumSize = new System.Drawing.Size(1260, 500);
             this.MinimumSize = new System.Drawing.Size(1260, 500);
@@ -385,6 +451,8 @@ namespace ProjectV1
             ((System.ComponentModel.ISupportInitialize)(this.studentTableDGV)).EndInit();
             this.infoPreviewP.ResumeLayout(false);
             this.infoPreviewP.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -393,8 +461,8 @@ namespace ProjectV1
         #endregion
         private System.Windows.Forms.BindingSource studentBindingSource;
         private System.Windows.Forms.Button refreshB;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button searchB;
+        private System.Windows.Forms.TextBox searchTB;
         private System.Windows.Forms.DataGridView studentTableDGV;
         private System.Windows.Forms.Panel infoPreviewP;
         private System.Windows.Forms.Label titlePreviewL;
@@ -421,5 +489,10 @@ namespace ProjectV1
         private System.Windows.Forms.Button nextB;
         private System.Windows.Forms.Button prevB;
         private System.Windows.Forms.Button updateB;
+        private System.Windows.Forms.RadioButton studentIDFilterRB;
+        private System.Windows.Forms.RadioButton fNameFilterRB;
+        private System.Windows.Forms.RadioButton lNameFilterRB;
+        private System.Windows.Forms.RadioButton phoneNumFilterRB;
+        private System.Windows.Forms.GroupBox groupBox1;
     }
 }
