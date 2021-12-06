@@ -132,18 +132,18 @@ namespace ProjectV1
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(9, 189);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(71, 13);
+            this.label5.Size = new System.Drawing.Size(62, 13);
             this.label5.TabIndex = 6;
-            this.label5.Text = "Father Name:";
+            this.label5.Text = "Guardian 1:";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(189, 189);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(74, 13);
+            this.label7.Size = new System.Drawing.Size(62, 13);
             this.label7.TabIndex = 8;
-            this.label7.Text = "Mother Name:";
+            this.label7.Text = "Guardian 2:";
             // 
             // fatherFirstNameTb
             // 
@@ -278,7 +278,7 @@ namespace ProjectV1
             // fNameLabel
             // 
             this.fNameLabel.AutoSize = true;
-            this.fNameLabel.BackColor = System.Drawing.Color.Red;
+            this.fNameLabel.BackColor = System.Drawing.SystemColors.WindowFrame;
             this.fNameLabel.ForeColor = System.Drawing.Color.White;
             this.fNameLabel.Location = new System.Drawing.Point(421, 125);
             this.fNameLabel.Name = "fNameLabel";
@@ -288,7 +288,7 @@ namespace ProjectV1
             // previewfName
             // 
             this.previewfName.AutoSize = true;
-            this.previewfName.BackColor = System.Drawing.Color.Red;
+            this.previewfName.BackColor = System.Drawing.SystemColors.WindowFrame;
             this.previewfName.ForeColor = System.Drawing.Color.White;
             this.previewfName.Location = new System.Drawing.Point(519, 125);
             this.previewfName.Name = "previewfName";
@@ -298,7 +298,7 @@ namespace ProjectV1
             // lNameLabel
             // 
             this.lNameLabel.AutoSize = true;
-            this.lNameLabel.BackColor = System.Drawing.Color.Red;
+            this.lNameLabel.BackColor = System.Drawing.SystemColors.WindowFrame;
             this.lNameLabel.ForeColor = System.Drawing.Color.White;
             this.lNameLabel.Location = new System.Drawing.Point(421, 138);
             this.lNameLabel.Name = "lNameLabel";
@@ -308,7 +308,7 @@ namespace ProjectV1
             // previewlName
             // 
             this.previewlName.AutoSize = true;
-            this.previewlName.BackColor = System.Drawing.Color.Red;
+            this.previewlName.BackColor = System.Drawing.SystemColors.WindowFrame;
             this.previewlName.ForeColor = System.Drawing.Color.White;
             this.previewlName.Location = new System.Drawing.Point(519, 141);
             this.previewlName.Name = "previewlName";
@@ -329,7 +329,7 @@ namespace ProjectV1
             // fatherNameLabel
             // 
             this.fatherNameLabel.AutoSize = true;
-            this.fatherNameLabel.BackColor = System.Drawing.Color.Red;
+            this.fatherNameLabel.BackColor = System.Drawing.SystemColors.WindowFrame;
             this.fatherNameLabel.ForeColor = System.Drawing.Color.White;
             this.fatherNameLabel.Location = new System.Drawing.Point(421, 178);
             this.fatherNameLabel.Name = "fatherNameLabel";
@@ -339,7 +339,7 @@ namespace ProjectV1
             // previewMotherName
             // 
             this.previewMotherName.AutoSize = true;
-            this.previewMotherName.BackColor = System.Drawing.Color.Red;
+            this.previewMotherName.BackColor = System.Drawing.SystemColors.WindowFrame;
             this.previewMotherName.ForeColor = System.Drawing.Color.White;
             this.previewMotherName.Location = new System.Drawing.Point(521, 191);
             this.previewMotherName.Name = "previewMotherName";
@@ -349,7 +349,7 @@ namespace ProjectV1
             // motherNameLabel
             // 
             this.motherNameLabel.AutoSize = true;
-            this.motherNameLabel.BackColor = System.Drawing.Color.Red;
+            this.motherNameLabel.BackColor = System.Drawing.SystemColors.WindowFrame;
             this.motherNameLabel.ForeColor = System.Drawing.Color.White;
             this.motherNameLabel.Location = new System.Drawing.Point(421, 191);
             this.motherNameLabel.Name = "motherNameLabel";
@@ -359,7 +359,7 @@ namespace ProjectV1
             // previewFatherName
             // 
             this.previewFatherName.AutoSize = true;
-            this.previewFatherName.BackColor = System.Drawing.Color.Red;
+            this.previewFatherName.BackColor = System.Drawing.SystemColors.WindowFrame;
             this.previewFatherName.ForeColor = System.Drawing.Color.White;
             this.previewFatherName.Location = new System.Drawing.Point(522, 177);
             this.previewFatherName.Name = "previewFatherName";
@@ -369,7 +369,7 @@ namespace ProjectV1
             // emergLabel
             // 
             this.emergLabel.AutoSize = true;
-            this.emergLabel.BackColor = System.Drawing.Color.Red;
+            this.emergLabel.BackColor = System.Drawing.SystemColors.WindowFrame;
             this.emergLabel.ForeColor = System.Drawing.Color.White;
             this.emergLabel.Location = new System.Drawing.Point(421, 235);
             this.emergLabel.Name = "emergLabel";
@@ -379,7 +379,7 @@ namespace ProjectV1
             // previewEmerg
             // 
             this.previewEmerg.AutoSize = true;
-            this.previewEmerg.BackColor = System.Drawing.Color.Red;
+            this.previewEmerg.BackColor = System.Drawing.SystemColors.WindowFrame;
             this.previewEmerg.ForeColor = System.Drawing.Color.White;
             this.previewEmerg.Location = new System.Drawing.Point(519, 235);
             this.previewEmerg.Name = "previewEmerg";
@@ -389,7 +389,7 @@ namespace ProjectV1
             // addyLabel
             // 
             this.addyLabel.AutoSize = true;
-            this.addyLabel.BackColor = System.Drawing.Color.Red;
+            this.addyLabel.BackColor = System.Drawing.SystemColors.WindowFrame;
             this.addyLabel.ForeColor = System.Drawing.Color.White;
             this.addyLabel.Location = new System.Drawing.Point(421, 248);
             this.addyLabel.Name = "addyLabel";
@@ -399,7 +399,7 @@ namespace ProjectV1
             // previewAddy
             // 
             this.previewAddy.AutoSize = true;
-            this.previewAddy.BackColor = System.Drawing.Color.Red;
+            this.previewAddy.BackColor = System.Drawing.SystemColors.WindowFrame;
             this.previewAddy.ForeColor = System.Drawing.Color.White;
             this.previewAddy.Location = new System.Drawing.Point(519, 248);
             this.previewAddy.Name = "previewAddy";
@@ -409,7 +409,7 @@ namespace ProjectV1
             // postalLabel
             // 
             this.postalLabel.AutoSize = true;
-            this.postalLabel.BackColor = System.Drawing.Color.Red;
+            this.postalLabel.BackColor = System.Drawing.SystemColors.WindowFrame;
             this.postalLabel.ForeColor = System.Drawing.Color.White;
             this.postalLabel.Location = new System.Drawing.Point(421, 265);
             this.postalLabel.Name = "postalLabel";
@@ -419,7 +419,7 @@ namespace ProjectV1
             // previewPostal
             // 
             this.previewPostal.AutoSize = true;
-            this.previewPostal.BackColor = System.Drawing.Color.Red;
+            this.previewPostal.BackColor = System.Drawing.SystemColors.WindowFrame;
             this.previewPostal.ForeColor = System.Drawing.Color.White;
             this.previewPostal.Location = new System.Drawing.Point(519, 265);
             this.previewPostal.Name = "previewPostal";
@@ -429,7 +429,7 @@ namespace ProjectV1
             // cellLabel
             // 
             this.cellLabel.AutoSize = true;
-            this.cellLabel.BackColor = System.Drawing.Color.Red;
+            this.cellLabel.BackColor = System.Drawing.SystemColors.WindowFrame;
             this.cellLabel.ForeColor = System.Drawing.Color.White;
             this.cellLabel.Location = new System.Drawing.Point(582, 125);
             this.cellLabel.Name = "cellLabel";
@@ -439,7 +439,7 @@ namespace ProjectV1
             // dobLabel
             // 
             this.dobLabel.AutoSize = true;
-            this.dobLabel.BackColor = System.Drawing.Color.Red;
+            this.dobLabel.BackColor = System.Drawing.SystemColors.WindowFrame;
             this.dobLabel.ForeColor = System.Drawing.Color.White;
             this.dobLabel.Location = new System.Drawing.Point(582, 141);
             this.dobLabel.Name = "dobLabel";
@@ -449,7 +449,7 @@ namespace ProjectV1
             // previewCell
             // 
             this.previewCell.AutoSize = true;
-            this.previewCell.BackColor = System.Drawing.Color.Red;
+            this.previewCell.BackColor = System.Drawing.SystemColors.WindowFrame;
             this.previewCell.ForeColor = System.Drawing.Color.White;
             this.previewCell.Location = new System.Drawing.Point(660, 125);
             this.previewCell.Name = "previewCell";
@@ -459,7 +459,7 @@ namespace ProjectV1
             // previewDob
             // 
             this.previewDob.AutoSize = true;
-            this.previewDob.BackColor = System.Drawing.Color.Red;
+            this.previewDob.BackColor = System.Drawing.SystemColors.WindowFrame;
             this.previewDob.ForeColor = System.Drawing.Color.White;
             this.previewDob.Location = new System.Drawing.Point(660, 141);
             this.previewDob.Name = "previewDob";
