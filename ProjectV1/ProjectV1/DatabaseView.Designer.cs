@@ -32,7 +32,6 @@ namespace ProjectV1
             this.components = new System.ComponentModel.Container();
             this.studentBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.refreshB = new System.Windows.Forms.Button();
-            this.searchB = new System.Windows.Forms.Button();
             this.searchTB = new System.Windows.Forms.TextBox();
             this.studentTableDGV = new System.Windows.Forms.DataGridView();
             this.infoPreviewP = new System.Windows.Forms.Panel();
@@ -86,21 +85,11 @@ namespace ProjectV1
             this.refreshB.UseVisualStyleBackColor = true;
             this.refreshB.Click += new System.EventHandler(this.refreshB_Click);
             // 
-            // searchB
-            // 
-            this.searchB.Location = new System.Drawing.Point(605, 13);
-            this.searchB.Name = "searchB";
-            this.searchB.Size = new System.Drawing.Size(75, 23);
-            this.searchB.TabIndex = 3;
-            this.searchB.Text = "Search";
-            this.searchB.UseVisualStyleBackColor = true;
-            this.searchB.Click += new System.EventHandler(this.searchB_Click);
-            // 
             // searchTB
             // 
             this.searchTB.Location = new System.Drawing.Point(460, 15);
             this.searchTB.Name = "searchTB";
-            this.searchTB.Size = new System.Drawing.Size(139, 20);
+            this.searchTB.Size = new System.Drawing.Size(220, 20);
             this.searchTB.TabIndex = 4;
             this.searchTB.TextChanged += new System.EventHandler(this.searchTB_TextChanged);
             // 
@@ -451,7 +440,6 @@ namespace ProjectV1
             this.Controls.Add(this.infoPreviewP);
             this.Controls.Add(this.studentTableDGV);
             this.Controls.Add(this.searchTB);
-            this.Controls.Add(this.searchB);
             this.Controls.Add(this.refreshB);
             this.MaximumSize = new System.Drawing.Size(1260, 500);
             this.MinimumSize = new System.Drawing.Size(1260, 500);
@@ -472,7 +460,6 @@ namespace ProjectV1
         #endregion
         private System.Windows.Forms.BindingSource studentBindingSource;
         private System.Windows.Forms.Button refreshB;
-        private System.Windows.Forms.Button searchB;
         private System.Windows.Forms.TextBox searchTB;
         private System.Windows.Forms.DataGridView studentTableDGV;
         private System.Windows.Forms.Panel infoPreviewP;

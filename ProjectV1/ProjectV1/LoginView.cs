@@ -39,7 +39,7 @@ namespace ProjectV1
 
         private void OnKeyEnterDown(object sender, KeyEventArgs e)
         {
-            //if press enter either goes to net textbox or logs in
+            // If press enter either goes to passwordTB if usernameTB is focused or logs in if passwordTB is selected
             if (e.KeyCode == Keys.Enter)
             {
                 if (usernameTB.Focused)
@@ -48,6 +48,7 @@ namespace ProjectV1
                 }
                 else if (usernameTB.Text == "user" && passwordTB.Text == "pass")
                 {
+                    // Hides the login form once logged in and it will close upon the closing of the dashboard form
                     this.Hide();
                     DashboardView mainMenu = new DashboardView();
                     mainMenu.FormClosed += (s, args) => this.Close();
@@ -55,11 +56,13 @@ namespace ProjectV1
                 }
                 else
                 {
+                    // If the username or pass word is wrong, it will display error message
                     MessageBox.Show("Please enter a valid username and/or password", "Wrong username/password", MessageBoxButtons.OK,
                         MessageBoxIcon.Error);
                 }
-                e.Handled = true;
-                e.SuppressKeyPress = true;
+                // To disable the sound from pressing enter since its single line text boxes.
+                e.Handled = true;       // Makes the event handled
+                e.SuppressKeyPress = true;  // Makes the key press not active in the end
             }
         }
     }

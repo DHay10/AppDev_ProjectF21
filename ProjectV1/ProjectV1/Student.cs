@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace ProjectV1
 {
+    /**
+      * Student Class
+      */
     class Student
     {
         private int _studentID;
@@ -16,50 +19,61 @@ namespace ProjectV1
         private string _address;
         private string _postalCode;
         private string _emergencyNum;
-        private string _parent1Name;
-        private string _parent2Name;
+        private string _guardian1Name;
+        private string _guardian2Name;
 
+        // Default Constructor
         public Student()
         {
         }
 
+        /** 
+          * Constructor with all param except studentID
+          * The _studentID will be initialized using checkAvailableID()
+          */
         public Student(string fName, string lName, DateTime dob, string phoneNum, string address, string postalCode, 
-            string emergencyNum, string parent1Name, string parent2Name)
+            string emergencyNum, string guardian1Name, string guardian2Name)
         {
-            _studentID = checkAvailableID();
-            _fName = fName;
-            _lName = lName;
-            _dob = dob;
-            _phoneNum = phoneNum;
-            _address = address;
-            _postalCode = postalCode;
-            _emergencyNum = emergencyNum;
-            _parent1Name = parent1Name;
-            _parent2Name = parent2Name;
+            StudentID = checkAvailableID();
+            FName = fName;
+            LName = lName;
+            Dob = dob;
+            PhoneNum = phoneNum;
+            Address = address;
+            PostalCode = postalCode;
+            EmergencyNum = emergencyNum;
+            Guardian1Name = guardian1Name;
+            Guardian2Name = guardian2Name;
         }
 
+        /**
+          * Constructor with all param
+          */
         public Student(int studentID, string fName, string lName, DateTime dob, string phoneNum, string address, 
-            string postalCode, string emergencyNum, string parent1Name, string parent2Name)
+            string postalCode, string emergencyNum, string guardian1Name, string guardian2Name)
         {
-            _studentID = studentID;
-            _fName = fName;
-            _lName = lName;
-            _dob = dob;
-            _phoneNum = phoneNum;
-            _address = address;
-            _postalCode = postalCode;
-            _emergencyNum = emergencyNum;
-            _parent1Name = parent1Name;
-            _parent2Name = parent2Name;
+            StudentID = studentID;
+            FName = fName;
+            LName = lName;
+            Dob = dob;
+            PhoneNum = phoneNum;
+            Address = address;
+            PostalCode = postalCode;
+            EmergencyNum = emergencyNum;
+            Guardian1Name = guardian1Name;
+            Guardian2Name = guardian2Name;
         }
 
+        /**
+          * Method to check which ID is currently unnassigned in ascending order
+          */
         private static int checkAvailableID()
         {
-            int id = 1;
-            for (int i = 0; i < DBSystem.Students.Count; i++) { 
+            int id = 1;     // Starting ID
+            for (int i = 0; i < DBSystem.Students.Count; i++) { // Loops through because list is not sorted by ID
                 foreach (Student s in DBSystem.Students)
                 {
-                    if (id == s.StudentID)
+                    if (id == s.StudentID)      // If studentID is already used add to the id index
                     {
                         ++id;
                     }
@@ -68,6 +82,7 @@ namespace ProjectV1
             return id;
         }
 
+        // Properties
         public int StudentID
         {
             get => _studentID;
@@ -115,16 +130,16 @@ namespace ProjectV1
             set => _emergencyNum = value;
         }
 
-        public string Parent1Name
+        public string Guardian1Name
         {
-            get => _parent1Name;
-            set => _parent1Name = value;
+            get => _guardian1Name;
+            set => _guardian1Name = value;
         }
 
-        public string Parent2Name
+        public string Guardian2Name
         {
-            get => _parent2Name;
-            set => _parent2Name = value;
+            get => _guardian2Name;
+            set => _guardian2Name = value;
         }
     }
 }
