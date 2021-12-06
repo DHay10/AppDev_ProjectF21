@@ -56,11 +56,13 @@ namespace ProjectV1
         private static int checkAvailableID()
         {
             int id = 1;
-            foreach (Student s in DBSystem.Students)
-            {
-                if (id == s.StudentID)
+            for (int i = 0; i < DBSystem.Students.Count; i++) { 
+                foreach (Student s in DBSystem.Students)
                 {
-                    id++;
+                    if (id == s.StudentID)
+                    {
+                        ++id;
+                    }
                 }
             }
             return id;
